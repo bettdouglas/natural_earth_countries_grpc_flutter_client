@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'countries_bloc.dart';
 
@@ -11,35 +12,7 @@ part of 'countries_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$CountriesEventTearOff {
-  const _$CountriesEventTearOff();
-
-  _Started started() {
-    return const _Started();
-  }
-
-  _Search search(String word) {
-    return _Search(
-      word,
-    );
-  }
-
-  _Within within(Geometry boundary) {
-    return _Within(
-      boundary,
-    );
-  }
-
-  _All getAll() {
-    return const _All();
-  }
-}
-
-/// @nodoc
-const $CountriesEvent = _$CountriesEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$CountriesEvent {
@@ -53,10 +26,10 @@ mixin _$CountriesEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(String word)? search,
-    TResult Function(Geometry boundary)? within,
-    TResult Function()? getAll,
+    TResult? Function()? started,
+    TResult? Function(String word)? search,
+    TResult? Function(Geometry boundary)? within,
+    TResult? Function()? getAll,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -78,10 +51,10 @@ mixin _$CountriesEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_Search value)? search,
-    TResult Function(_Within value)? within,
-    TResult Function(_All value)? getAll,
+    TResult? Function(_Started value)? started,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Within value)? within,
+    TResult? Function(_All value)? getAll,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -99,39 +72,40 @@ mixin _$CountriesEvent {
 abstract class $CountriesEventCopyWith<$Res> {
   factory $CountriesEventCopyWith(
           CountriesEvent value, $Res Function(CountriesEvent) then) =
-      _$CountriesEventCopyWithImpl<$Res>;
+      _$CountriesEventCopyWithImpl<$Res, CountriesEvent>;
 }
 
 /// @nodoc
-class _$CountriesEventCopyWithImpl<$Res>
+class _$CountriesEventCopyWithImpl<$Res, $Val extends CountriesEvent>
     implements $CountriesEventCopyWith<$Res> {
   _$CountriesEventCopyWithImpl(this._value, this._then);
 
-  final CountriesEvent _value;
   // ignore: unused_field
-  final $Res Function(CountriesEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$StartedCopyWith<$Res> {
-  factory _$StartedCopyWith(_Started value, $Res Function(_Started) then) =
-      __$StartedCopyWithImpl<$Res>;
+abstract class _$$StartedImplCopyWith<$Res> {
+  factory _$$StartedImplCopyWith(
+          _$StartedImpl value, $Res Function(_$StartedImpl) then) =
+      __$$StartedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$StartedCopyWithImpl<$Res> extends _$CountriesEventCopyWithImpl<$Res>
-    implements _$StartedCopyWith<$Res> {
-  __$StartedCopyWithImpl(_Started _value, $Res Function(_Started) _then)
-      : super(_value, (v) => _then(v as _Started));
-
-  @override
-  _Started get _value => super._value as _Started;
+class __$$StartedImplCopyWithImpl<$Res>
+    extends _$CountriesEventCopyWithImpl<$Res, _$StartedImpl>
+    implements _$$StartedImplCopyWith<$Res> {
+  __$$StartedImplCopyWithImpl(
+      _$StartedImpl _value, $Res Function(_$StartedImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Started implements _Started {
-  const _$_Started();
+class _$StartedImpl implements _Started {
+  const _$StartedImpl();
 
   @override
   String toString() {
@@ -139,8 +113,9 @@ class _$_Started implements _Started {
   }
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _Started);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$StartedImpl);
   }
 
   @override
@@ -160,10 +135,10 @@ class _$_Started implements _Started {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(String word)? search,
-    TResult Function(Geometry boundary)? within,
-    TResult Function()? getAll,
+    TResult? Function()? started,
+    TResult? Function(String word)? search,
+    TResult? Function(Geometry boundary)? within,
+    TResult? Function()? getAll,
   }) {
     return started?.call();
   }
@@ -197,10 +172,10 @@ class _$_Started implements _Started {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_Search value)? search,
-    TResult Function(_Within value)? within,
-    TResult Function(_All value)? getAll,
+    TResult? Function(_Started value)? started,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Within value)? within,
+    TResult? Function(_All value)? getAll,
   }) {
     return started?.call(this);
   }
@@ -222,31 +197,33 @@ class _$_Started implements _Started {
 }
 
 abstract class _Started implements CountriesEvent {
-  const factory _Started() = _$_Started;
+  const factory _Started() = _$StartedImpl;
 }
 
 /// @nodoc
-abstract class _$SearchCopyWith<$Res> {
-  factory _$SearchCopyWith(_Search value, $Res Function(_Search) then) =
-      __$SearchCopyWithImpl<$Res>;
+abstract class _$$SearchImplCopyWith<$Res> {
+  factory _$$SearchImplCopyWith(
+          _$SearchImpl value, $Res Function(_$SearchImpl) then) =
+      __$$SearchImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({String word});
 }
 
 /// @nodoc
-class __$SearchCopyWithImpl<$Res> extends _$CountriesEventCopyWithImpl<$Res>
-    implements _$SearchCopyWith<$Res> {
-  __$SearchCopyWithImpl(_Search _value, $Res Function(_Search) _then)
-      : super(_value, (v) => _then(v as _Search));
+class __$$SearchImplCopyWithImpl<$Res>
+    extends _$CountriesEventCopyWithImpl<$Res, _$SearchImpl>
+    implements _$$SearchImplCopyWith<$Res> {
+  __$$SearchImplCopyWithImpl(
+      _$SearchImpl _value, $Res Function(_$SearchImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Search get _value => super._value as _Search;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? word = freezed,
+    Object? word = null,
   }) {
-    return _then(_Search(
-      word == freezed
+    return _then(_$SearchImpl(
+      null == word
           ? _value.word
           : word // ignore: cast_nullable_to_non_nullable
               as String,
@@ -256,8 +233,8 @@ class __$SearchCopyWithImpl<$Res> extends _$CountriesEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Search implements _Search {
-  const _$_Search(this.word);
+class _$SearchImpl implements _Search {
+  const _$SearchImpl(this.word);
 
   @override
   final String word;
@@ -268,21 +245,21 @@ class _$_Search implements _Search {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _Search &&
-            (identical(other.word, word) ||
-                const DeepCollectionEquality().equals(other.word, word)));
+        (other.runtimeType == runtimeType &&
+            other is _$SearchImpl &&
+            (identical(other.word, word) || other.word == word));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(word);
+  int get hashCode => Object.hash(runtimeType, word);
 
   @JsonKey(ignore: true)
   @override
-  _$SearchCopyWith<_Search> get copyWith =>
-      __$SearchCopyWithImpl<_Search>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$SearchImplCopyWith<_$SearchImpl> get copyWith =>
+      __$$SearchImplCopyWithImpl<_$SearchImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -298,10 +275,10 @@ class _$_Search implements _Search {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(String word)? search,
-    TResult Function(Geometry boundary)? within,
-    TResult Function()? getAll,
+    TResult? Function()? started,
+    TResult? Function(String word)? search,
+    TResult? Function(Geometry boundary)? within,
+    TResult? Function()? getAll,
   }) {
     return search?.call(word);
   }
@@ -335,10 +312,10 @@ class _$_Search implements _Search {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_Search value)? search,
-    TResult Function(_Within value)? within,
-    TResult Function(_All value)? getAll,
+    TResult? Function(_Started value)? started,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Within value)? within,
+    TResult? Function(_All value)? getAll,
   }) {
     return search?.call(this);
   }
@@ -360,35 +337,38 @@ class _$_Search implements _Search {
 }
 
 abstract class _Search implements CountriesEvent {
-  const factory _Search(String word) = _$_Search;
+  const factory _Search(final String word) = _$SearchImpl;
 
-  String get word => throw _privateConstructorUsedError;
+  String get word;
   @JsonKey(ignore: true)
-  _$SearchCopyWith<_Search> get copyWith => throw _privateConstructorUsedError;
+  _$$SearchImplCopyWith<_$SearchImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$WithinCopyWith<$Res> {
-  factory _$WithinCopyWith(_Within value, $Res Function(_Within) then) =
-      __$WithinCopyWithImpl<$Res>;
+abstract class _$$WithinImplCopyWith<$Res> {
+  factory _$$WithinImplCopyWith(
+          _$WithinImpl value, $Res Function(_$WithinImpl) then) =
+      __$$WithinImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({Geometry boundary});
 }
 
 /// @nodoc
-class __$WithinCopyWithImpl<$Res> extends _$CountriesEventCopyWithImpl<$Res>
-    implements _$WithinCopyWith<$Res> {
-  __$WithinCopyWithImpl(_Within _value, $Res Function(_Within) _then)
-      : super(_value, (v) => _then(v as _Within));
+class __$$WithinImplCopyWithImpl<$Res>
+    extends _$CountriesEventCopyWithImpl<$Res, _$WithinImpl>
+    implements _$$WithinImplCopyWith<$Res> {
+  __$$WithinImplCopyWithImpl(
+      _$WithinImpl _value, $Res Function(_$WithinImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Within get _value => super._value as _Within;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? boundary = freezed,
+    Object? boundary = null,
   }) {
-    return _then(_Within(
-      boundary == freezed
+    return _then(_$WithinImpl(
+      null == boundary
           ? _value.boundary
           : boundary // ignore: cast_nullable_to_non_nullable
               as Geometry,
@@ -398,8 +378,8 @@ class __$WithinCopyWithImpl<$Res> extends _$CountriesEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Within implements _Within {
-  const _$_Within(this.boundary);
+class _$WithinImpl implements _Within {
+  const _$WithinImpl(this.boundary);
 
   @override
   final Geometry boundary;
@@ -410,22 +390,22 @@ class _$_Within implements _Within {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _Within &&
+        (other.runtimeType == runtimeType &&
+            other is _$WithinImpl &&
             (identical(other.boundary, boundary) ||
-                const DeepCollectionEquality()
-                    .equals(other.boundary, boundary)));
+                other.boundary == boundary));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(boundary);
+  int get hashCode => Object.hash(runtimeType, boundary);
 
   @JsonKey(ignore: true)
   @override
-  _$WithinCopyWith<_Within> get copyWith =>
-      __$WithinCopyWithImpl<_Within>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$WithinImplCopyWith<_$WithinImpl> get copyWith =>
+      __$$WithinImplCopyWithImpl<_$WithinImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -441,10 +421,10 @@ class _$_Within implements _Within {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(String word)? search,
-    TResult Function(Geometry boundary)? within,
-    TResult Function()? getAll,
+    TResult? Function()? started,
+    TResult? Function(String word)? search,
+    TResult? Function(Geometry boundary)? within,
+    TResult? Function()? getAll,
   }) {
     return within?.call(boundary);
   }
@@ -478,10 +458,10 @@ class _$_Within implements _Within {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_Search value)? search,
-    TResult Function(_Within value)? within,
-    TResult Function(_All value)? getAll,
+    TResult? Function(_Started value)? started,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Within value)? within,
+    TResult? Function(_All value)? getAll,
   }) {
     return within?.call(this);
   }
@@ -503,33 +483,32 @@ class _$_Within implements _Within {
 }
 
 abstract class _Within implements CountriesEvent {
-  const factory _Within(Geometry boundary) = _$_Within;
+  const factory _Within(final Geometry boundary) = _$WithinImpl;
 
-  Geometry get boundary => throw _privateConstructorUsedError;
+  Geometry get boundary;
   @JsonKey(ignore: true)
-  _$WithinCopyWith<_Within> get copyWith => throw _privateConstructorUsedError;
+  _$$WithinImplCopyWith<_$WithinImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$AllCopyWith<$Res> {
-  factory _$AllCopyWith(_All value, $Res Function(_All) then) =
-      __$AllCopyWithImpl<$Res>;
+abstract class _$$AllImplCopyWith<$Res> {
+  factory _$$AllImplCopyWith(_$AllImpl value, $Res Function(_$AllImpl) then) =
+      __$$AllImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$AllCopyWithImpl<$Res> extends _$CountriesEventCopyWithImpl<$Res>
-    implements _$AllCopyWith<$Res> {
-  __$AllCopyWithImpl(_All _value, $Res Function(_All) _then)
-      : super(_value, (v) => _then(v as _All));
-
-  @override
-  _All get _value => super._value as _All;
+class __$$AllImplCopyWithImpl<$Res>
+    extends _$CountriesEventCopyWithImpl<$Res, _$AllImpl>
+    implements _$$AllImplCopyWith<$Res> {
+  __$$AllImplCopyWithImpl(_$AllImpl _value, $Res Function(_$AllImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_All implements _All {
-  const _$_All();
+class _$AllImpl implements _All {
+  const _$AllImpl();
 
   @override
   String toString() {
@@ -537,8 +516,9 @@ class _$_All implements _All {
   }
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _All);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$AllImpl);
   }
 
   @override
@@ -558,10 +538,10 @@ class _$_All implements _All {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(String word)? search,
-    TResult Function(Geometry boundary)? within,
-    TResult Function()? getAll,
+    TResult? Function()? started,
+    TResult? Function(String word)? search,
+    TResult? Function(Geometry boundary)? within,
+    TResult? Function()? getAll,
   }) {
     return getAll?.call();
   }
@@ -595,10 +575,10 @@ class _$_All implements _All {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_Search value)? search,
-    TResult Function(_Within value)? within,
-    TResult Function(_All value)? getAll,
+    TResult? Function(_Started value)? started,
+    TResult? Function(_Search value)? search,
+    TResult? Function(_Within value)? within,
+    TResult? Function(_All value)? getAll,
   }) {
     return getAll?.call(this);
   }
@@ -620,45 +600,8 @@ class _$_All implements _All {
 }
 
 abstract class _All implements CountriesEvent {
-  const factory _All() = _$_All;
+  const factory _All() = _$AllImpl;
 }
-
-/// @nodoc
-class _$CountriesStateTearOff {
-  const _$CountriesStateTearOff();
-
-  _Initial initial() {
-    return const _Initial();
-  }
-
-  _Loading loading(String msg) {
-    return _Loading(
-      msg,
-    );
-  }
-
-  _Updating updating(List<Country> countries, String msg) {
-    return _Updating(
-      countries,
-      msg,
-    );
-  }
-
-  _Loaded loaded(List<Country> countries) {
-    return _Loaded(
-      countries,
-    );
-  }
-
-  _Error error(Object error) {
-    return _Error(
-      error,
-    );
-  }
-}
-
-/// @nodoc
-const $CountriesState = _$CountriesStateTearOff();
 
 /// @nodoc
 mixin _$CountriesState {
@@ -673,11 +616,11 @@ mixin _$CountriesState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(String msg)? loading,
-    TResult Function(List<Country> countries, String msg)? updating,
-    TResult Function(List<Country> countries)? loaded,
-    TResult Function(Object error)? error,
+    TResult? Function()? initial,
+    TResult? Function(String msg)? loading,
+    TResult? Function(List<Country> countries, String msg)? updating,
+    TResult? Function(List<Country> countries)? loaded,
+    TResult? Function(Object error)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -701,11 +644,11 @@ mixin _$CountriesState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_Loading value)? loading,
-    TResult Function(_Updating value)? updating,
-    TResult Function(_Loaded value)? loaded,
-    TResult Function(_Error value)? error,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Updating value)? updating,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -724,39 +667,40 @@ mixin _$CountriesState {
 abstract class $CountriesStateCopyWith<$Res> {
   factory $CountriesStateCopyWith(
           CountriesState value, $Res Function(CountriesState) then) =
-      _$CountriesStateCopyWithImpl<$Res>;
+      _$CountriesStateCopyWithImpl<$Res, CountriesState>;
 }
 
 /// @nodoc
-class _$CountriesStateCopyWithImpl<$Res>
+class _$CountriesStateCopyWithImpl<$Res, $Val extends CountriesState>
     implements $CountriesStateCopyWith<$Res> {
   _$CountriesStateCopyWithImpl(this._value, this._then);
 
-  final CountriesState _value;
   // ignore: unused_field
-  final $Res Function(CountriesState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$InitialCopyWith<$Res> {
-  factory _$InitialCopyWith(_Initial value, $Res Function(_Initial) then) =
-      __$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialImplCopyWith<$Res> {
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$InitialCopyWithImpl<$Res> extends _$CountriesStateCopyWithImpl<$Res>
-    implements _$InitialCopyWith<$Res> {
-  __$InitialCopyWithImpl(_Initial _value, $Res Function(_Initial) _then)
-      : super(_value, (v) => _then(v as _Initial));
-
-  @override
-  _Initial get _value => super._value as _Initial;
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$CountriesStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Initial implements _Initial {
-  const _$_Initial();
+class _$InitialImpl implements _Initial {
+  const _$InitialImpl();
 
   @override
   String toString() {
@@ -764,8 +708,9 @@ class _$_Initial implements _Initial {
   }
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _Initial);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$InitialImpl);
   }
 
   @override
@@ -786,11 +731,11 @@ class _$_Initial implements _Initial {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(String msg)? loading,
-    TResult Function(List<Country> countries, String msg)? updating,
-    TResult Function(List<Country> countries)? loaded,
-    TResult Function(Object error)? error,
+    TResult? Function()? initial,
+    TResult? Function(String msg)? loading,
+    TResult? Function(List<Country> countries, String msg)? updating,
+    TResult? Function(List<Country> countries)? loaded,
+    TResult? Function(Object error)? error,
   }) {
     return initial?.call();
   }
@@ -826,11 +771,11 @@ class _$_Initial implements _Initial {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_Loading value)? loading,
-    TResult Function(_Updating value)? updating,
-    TResult Function(_Loaded value)? loaded,
-    TResult Function(_Error value)? error,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Updating value)? updating,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
   }) {
     return initial?.call(this);
   }
@@ -853,31 +798,33 @@ class _$_Initial implements _Initial {
 }
 
 abstract class _Initial implements CountriesState {
-  const factory _Initial() = _$_Initial;
+  const factory _Initial() = _$InitialImpl;
 }
 
 /// @nodoc
-abstract class _$LoadingCopyWith<$Res> {
-  factory _$LoadingCopyWith(_Loading value, $Res Function(_Loading) then) =
-      __$LoadingCopyWithImpl<$Res>;
+abstract class _$$LoadingImplCopyWith<$Res> {
+  factory _$$LoadingImplCopyWith(
+          _$LoadingImpl value, $Res Function(_$LoadingImpl) then) =
+      __$$LoadingImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({String msg});
 }
 
 /// @nodoc
-class __$LoadingCopyWithImpl<$Res> extends _$CountriesStateCopyWithImpl<$Res>
-    implements _$LoadingCopyWith<$Res> {
-  __$LoadingCopyWithImpl(_Loading _value, $Res Function(_Loading) _then)
-      : super(_value, (v) => _then(v as _Loading));
+class __$$LoadingImplCopyWithImpl<$Res>
+    extends _$CountriesStateCopyWithImpl<$Res, _$LoadingImpl>
+    implements _$$LoadingImplCopyWith<$Res> {
+  __$$LoadingImplCopyWithImpl(
+      _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Loading get _value => super._value as _Loading;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? msg = freezed,
+    Object? msg = null,
   }) {
-    return _then(_Loading(
-      msg == freezed
+    return _then(_$LoadingImpl(
+      null == msg
           ? _value.msg
           : msg // ignore: cast_nullable_to_non_nullable
               as String,
@@ -887,8 +834,8 @@ class __$LoadingCopyWithImpl<$Res> extends _$CountriesStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Loading implements _Loading {
-  const _$_Loading(this.msg);
+class _$LoadingImpl implements _Loading {
+  const _$LoadingImpl(this.msg);
 
   @override
   final String msg;
@@ -899,21 +846,21 @@ class _$_Loading implements _Loading {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _Loading &&
-            (identical(other.msg, msg) ||
-                const DeepCollectionEquality().equals(other.msg, msg)));
+        (other.runtimeType == runtimeType &&
+            other is _$LoadingImpl &&
+            (identical(other.msg, msg) || other.msg == msg));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(msg);
+  int get hashCode => Object.hash(runtimeType, msg);
 
   @JsonKey(ignore: true)
   @override
-  _$LoadingCopyWith<_Loading> get copyWith =>
-      __$LoadingCopyWithImpl<_Loading>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$LoadingImplCopyWith<_$LoadingImpl> get copyWith =>
+      __$$LoadingImplCopyWithImpl<_$LoadingImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -930,11 +877,11 @@ class _$_Loading implements _Loading {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(String msg)? loading,
-    TResult Function(List<Country> countries, String msg)? updating,
-    TResult Function(List<Country> countries)? loaded,
-    TResult Function(Object error)? error,
+    TResult? Function()? initial,
+    TResult? Function(String msg)? loading,
+    TResult? Function(List<Country> countries, String msg)? updating,
+    TResult? Function(List<Country> countries)? loaded,
+    TResult? Function(Object error)? error,
   }) {
     return loading?.call(msg);
   }
@@ -970,11 +917,11 @@ class _$_Loading implements _Loading {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_Loading value)? loading,
-    TResult Function(_Updating value)? updating,
-    TResult Function(_Loaded value)? loaded,
-    TResult Function(_Error value)? error,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Updating value)? updating,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
   }) {
     return loading?.call(this);
   }
@@ -997,41 +944,43 @@ class _$_Loading implements _Loading {
 }
 
 abstract class _Loading implements CountriesState {
-  const factory _Loading(String msg) = _$_Loading;
+  const factory _Loading(final String msg) = _$LoadingImpl;
 
-  String get msg => throw _privateConstructorUsedError;
+  String get msg;
   @JsonKey(ignore: true)
-  _$LoadingCopyWith<_Loading> get copyWith =>
+  _$$LoadingImplCopyWith<_$LoadingImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$UpdatingCopyWith<$Res> {
-  factory _$UpdatingCopyWith(_Updating value, $Res Function(_Updating) then) =
-      __$UpdatingCopyWithImpl<$Res>;
+abstract class _$$UpdatingImplCopyWith<$Res> {
+  factory _$$UpdatingImplCopyWith(
+          _$UpdatingImpl value, $Res Function(_$UpdatingImpl) then) =
+      __$$UpdatingImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({List<Country> countries, String msg});
 }
 
 /// @nodoc
-class __$UpdatingCopyWithImpl<$Res> extends _$CountriesStateCopyWithImpl<$Res>
-    implements _$UpdatingCopyWith<$Res> {
-  __$UpdatingCopyWithImpl(_Updating _value, $Res Function(_Updating) _then)
-      : super(_value, (v) => _then(v as _Updating));
+class __$$UpdatingImplCopyWithImpl<$Res>
+    extends _$CountriesStateCopyWithImpl<$Res, _$UpdatingImpl>
+    implements _$$UpdatingImplCopyWith<$Res> {
+  __$$UpdatingImplCopyWithImpl(
+      _$UpdatingImpl _value, $Res Function(_$UpdatingImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Updating get _value => super._value as _Updating;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? countries = freezed,
-    Object? msg = freezed,
+    Object? countries = null,
+    Object? msg = null,
   }) {
-    return _then(_Updating(
-      countries == freezed
-          ? _value.countries
+    return _then(_$UpdatingImpl(
+      null == countries
+          ? _value._countries
           : countries // ignore: cast_nullable_to_non_nullable
               as List<Country>,
-      msg == freezed
+      null == msg
           ? _value.msg
           : msg // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1041,11 +990,18 @@ class __$UpdatingCopyWithImpl<$Res> extends _$CountriesStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Updating implements _Updating {
-  const _$_Updating(this.countries, this.msg);
+class _$UpdatingImpl implements _Updating {
+  const _$UpdatingImpl(final List<Country> countries, this.msg)
+      : _countries = countries;
 
+  final List<Country> _countries;
   @override
-  final List<Country> countries;
+  List<Country> get countries {
+    if (_countries is EqualUnmodifiableListView) return _countries;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_countries);
+  }
+
   @override
   final String msg;
 
@@ -1055,26 +1011,24 @@ class _$_Updating implements _Updating {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _Updating &&
-            (identical(other.countries, countries) ||
-                const DeepCollectionEquality()
-                    .equals(other.countries, countries)) &&
-            (identical(other.msg, msg) ||
-                const DeepCollectionEquality().equals(other.msg, msg)));
+        (other.runtimeType == runtimeType &&
+            other is _$UpdatingImpl &&
+            const DeepCollectionEquality()
+                .equals(other._countries, _countries) &&
+            (identical(other.msg, msg) || other.msg == msg));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(countries) ^
-      const DeepCollectionEquality().hash(msg);
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(_countries), msg);
 
   @JsonKey(ignore: true)
   @override
-  _$UpdatingCopyWith<_Updating> get copyWith =>
-      __$UpdatingCopyWithImpl<_Updating>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UpdatingImplCopyWith<_$UpdatingImpl> get copyWith =>
+      __$$UpdatingImplCopyWithImpl<_$UpdatingImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1091,11 +1045,11 @@ class _$_Updating implements _Updating {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(String msg)? loading,
-    TResult Function(List<Country> countries, String msg)? updating,
-    TResult Function(List<Country> countries)? loaded,
-    TResult Function(Object error)? error,
+    TResult? Function()? initial,
+    TResult? Function(String msg)? loading,
+    TResult? Function(List<Country> countries, String msg)? updating,
+    TResult? Function(List<Country> countries)? loaded,
+    TResult? Function(Object error)? error,
   }) {
     return updating?.call(countries, msg);
   }
@@ -1131,11 +1085,11 @@ class _$_Updating implements _Updating {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_Loading value)? loading,
-    TResult Function(_Updating value)? updating,
-    TResult Function(_Loaded value)? loaded,
-    TResult Function(_Error value)? error,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Updating value)? updating,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
   }) {
     return updating?.call(this);
   }
@@ -1158,38 +1112,41 @@ class _$_Updating implements _Updating {
 }
 
 abstract class _Updating implements CountriesState {
-  const factory _Updating(List<Country> countries, String msg) = _$_Updating;
+  const factory _Updating(final List<Country> countries, final String msg) =
+      _$UpdatingImpl;
 
-  List<Country> get countries => throw _privateConstructorUsedError;
-  String get msg => throw _privateConstructorUsedError;
+  List<Country> get countries;
+  String get msg;
   @JsonKey(ignore: true)
-  _$UpdatingCopyWith<_Updating> get copyWith =>
+  _$$UpdatingImplCopyWith<_$UpdatingImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$LoadedCopyWith<$Res> {
-  factory _$LoadedCopyWith(_Loaded value, $Res Function(_Loaded) then) =
-      __$LoadedCopyWithImpl<$Res>;
+abstract class _$$LoadedImplCopyWith<$Res> {
+  factory _$$LoadedImplCopyWith(
+          _$LoadedImpl value, $Res Function(_$LoadedImpl) then) =
+      __$$LoadedImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({List<Country> countries});
 }
 
 /// @nodoc
-class __$LoadedCopyWithImpl<$Res> extends _$CountriesStateCopyWithImpl<$Res>
-    implements _$LoadedCopyWith<$Res> {
-  __$LoadedCopyWithImpl(_Loaded _value, $Res Function(_Loaded) _then)
-      : super(_value, (v) => _then(v as _Loaded));
+class __$$LoadedImplCopyWithImpl<$Res>
+    extends _$CountriesStateCopyWithImpl<$Res, _$LoadedImpl>
+    implements _$$LoadedImplCopyWith<$Res> {
+  __$$LoadedImplCopyWithImpl(
+      _$LoadedImpl _value, $Res Function(_$LoadedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Loaded get _value => super._value as _Loaded;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? countries = freezed,
+    Object? countries = null,
   }) {
-    return _then(_Loaded(
-      countries == freezed
-          ? _value.countries
+    return _then(_$LoadedImpl(
+      null == countries
+          ? _value._countries
           : countries // ignore: cast_nullable_to_non_nullable
               as List<Country>,
     ));
@@ -1198,11 +1155,16 @@ class __$LoadedCopyWithImpl<$Res> extends _$CountriesStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Loaded implements _Loaded {
-  const _$_Loaded(this.countries);
+class _$LoadedImpl implements _Loaded {
+  const _$LoadedImpl(final List<Country> countries) : _countries = countries;
 
+  final List<Country> _countries;
   @override
-  final List<Country> countries;
+  List<Country> get countries {
+    if (_countries is EqualUnmodifiableListView) return _countries;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_countries);
+  }
 
   @override
   String toString() {
@@ -1210,22 +1172,23 @@ class _$_Loaded implements _Loaded {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _Loaded &&
-            (identical(other.countries, countries) ||
-                const DeepCollectionEquality()
-                    .equals(other.countries, countries)));
+        (other.runtimeType == runtimeType &&
+            other is _$LoadedImpl &&
+            const DeepCollectionEquality()
+                .equals(other._countries, _countries));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(countries);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_countries));
 
   @JsonKey(ignore: true)
   @override
-  _$LoadedCopyWith<_Loaded> get copyWith =>
-      __$LoadedCopyWithImpl<_Loaded>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$LoadedImplCopyWith<_$LoadedImpl> get copyWith =>
+      __$$LoadedImplCopyWithImpl<_$LoadedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1242,11 +1205,11 @@ class _$_Loaded implements _Loaded {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(String msg)? loading,
-    TResult Function(List<Country> countries, String msg)? updating,
-    TResult Function(List<Country> countries)? loaded,
-    TResult Function(Object error)? error,
+    TResult? Function()? initial,
+    TResult? Function(String msg)? loading,
+    TResult? Function(List<Country> countries, String msg)? updating,
+    TResult? Function(List<Country> countries)? loaded,
+    TResult? Function(Object error)? error,
   }) {
     return loaded?.call(countries);
   }
@@ -1282,11 +1245,11 @@ class _$_Loaded implements _Loaded {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_Loading value)? loading,
-    TResult Function(_Updating value)? updating,
-    TResult Function(_Loaded value)? loaded,
-    TResult Function(_Error value)? error,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Updating value)? updating,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
   }) {
     return loaded?.call(this);
   }
@@ -1309,46 +1272,46 @@ class _$_Loaded implements _Loaded {
 }
 
 abstract class _Loaded implements CountriesState {
-  const factory _Loaded(List<Country> countries) = _$_Loaded;
+  const factory _Loaded(final List<Country> countries) = _$LoadedImpl;
 
-  List<Country> get countries => throw _privateConstructorUsedError;
+  List<Country> get countries;
   @JsonKey(ignore: true)
-  _$LoadedCopyWith<_Loaded> get copyWith => throw _privateConstructorUsedError;
+  _$$LoadedImplCopyWith<_$LoadedImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ErrorCopyWith<$Res> {
-  factory _$ErrorCopyWith(_Error value, $Res Function(_Error) then) =
-      __$ErrorCopyWithImpl<$Res>;
+abstract class _$$ErrorImplCopyWith<$Res> {
+  factory _$$ErrorImplCopyWith(
+          _$ErrorImpl value, $Res Function(_$ErrorImpl) then) =
+      __$$ErrorImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({Object error});
 }
 
 /// @nodoc
-class __$ErrorCopyWithImpl<$Res> extends _$CountriesStateCopyWithImpl<$Res>
-    implements _$ErrorCopyWith<$Res> {
-  __$ErrorCopyWithImpl(_Error _value, $Res Function(_Error) _then)
-      : super(_value, (v) => _then(v as _Error));
+class __$$ErrorImplCopyWithImpl<$Res>
+    extends _$CountriesStateCopyWithImpl<$Res, _$ErrorImpl>
+    implements _$$ErrorImplCopyWith<$Res> {
+  __$$ErrorImplCopyWithImpl(
+      _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Error get _value => super._value as _Error;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = freezed,
+    Object? error = null,
   }) {
-    return _then(_Error(
-      error == freezed
-          ? _value.error
-          : error // ignore: cast_nullable_to_non_nullable
-              as Object,
+    return _then(_$ErrorImpl(
+      null == error ? _value.error : error,
     ));
   }
 }
 
 /// @nodoc
 
-class _$_Error implements _Error {
-  const _$_Error(this.error);
+class _$ErrorImpl implements _Error {
+  const _$ErrorImpl(this.error);
 
   @override
   final Object error;
@@ -1359,21 +1322,22 @@ class _$_Error implements _Error {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _Error &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+        (other.runtimeType == runtimeType &&
+            other is _$ErrorImpl &&
+            const DeepCollectionEquality().equals(other.error, error));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(error));
 
   @JsonKey(ignore: true)
   @override
-  _$ErrorCopyWith<_Error> get copyWith =>
-      __$ErrorCopyWithImpl<_Error>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
+      __$$ErrorImplCopyWithImpl<_$ErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1390,11 +1354,11 @@ class _$_Error implements _Error {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(String msg)? loading,
-    TResult Function(List<Country> countries, String msg)? updating,
-    TResult Function(List<Country> countries)? loaded,
-    TResult Function(Object error)? error,
+    TResult? Function()? initial,
+    TResult? Function(String msg)? loading,
+    TResult? Function(List<Country> countries, String msg)? updating,
+    TResult? Function(List<Country> countries)? loaded,
+    TResult? Function(Object error)? error,
   }) {
     return error?.call(this.error);
   }
@@ -1430,11 +1394,11 @@ class _$_Error implements _Error {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_Loading value)? loading,
-    TResult Function(_Updating value)? updating,
-    TResult Function(_Loaded value)? loaded,
-    TResult Function(_Error value)? error,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Updating value)? updating,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
   }) {
     return error?.call(this);
   }
@@ -1457,35 +1421,17 @@ class _$_Error implements _Error {
 }
 
 abstract class _Error implements CountriesState {
-  const factory _Error(Object error) = _$_Error;
+  const factory _Error(final Object error) = _$ErrorImpl;
 
-  Object get error => throw _privateConstructorUsedError;
+  Object get error;
   @JsonKey(ignore: true)
-  _$ErrorCopyWith<_Error> get copyWith => throw _privateConstructorUsedError;
+  _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$CountryGeomTearOff {
-  const _$CountryGeomTearOff();
-
-  _Polygon polygon(Polygon polygon) {
-    return _Polygon(
-      polygon,
-    );
-  }
-
-  _MultiPolygon multi(MultiPolygon polygon) {
-    return _MultiPolygon(
-      polygon,
-    );
-  }
-}
-
-/// @nodoc
-const $CountryGeom = _$CountryGeomTearOff();
 
 /// @nodoc
 mixin _$CountryGeom {
+  Geometry get polygon => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(Polygon polygon) polygon,
@@ -1494,8 +1440,8 @@ mixin _$CountryGeom {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(Polygon polygon)? polygon,
-    TResult Function(MultiPolygon polygon)? multi,
+    TResult? Function(Polygon polygon)? polygon,
+    TResult? Function(MultiPolygon polygon)? multi,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -1513,8 +1459,8 @@ mixin _$CountryGeom {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Polygon value)? polygon,
-    TResult Function(_MultiPolygon value)? multi,
+    TResult? Function(_Polygon value)? polygon,
+    TResult? Function(_MultiPolygon value)? multi,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -1530,40 +1476,44 @@ mixin _$CountryGeom {
 abstract class $CountryGeomCopyWith<$Res> {
   factory $CountryGeomCopyWith(
           CountryGeom value, $Res Function(CountryGeom) then) =
-      _$CountryGeomCopyWithImpl<$Res>;
+      _$CountryGeomCopyWithImpl<$Res, CountryGeom>;
 }
 
 /// @nodoc
-class _$CountryGeomCopyWithImpl<$Res> implements $CountryGeomCopyWith<$Res> {
+class _$CountryGeomCopyWithImpl<$Res, $Val extends CountryGeom>
+    implements $CountryGeomCopyWith<$Res> {
   _$CountryGeomCopyWithImpl(this._value, this._then);
 
-  final CountryGeom _value;
   // ignore: unused_field
-  final $Res Function(CountryGeom) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$PolygonCopyWith<$Res> {
-  factory _$PolygonCopyWith(_Polygon value, $Res Function(_Polygon) then) =
-      __$PolygonCopyWithImpl<$Res>;
+abstract class _$$PolygonImplCopyWith<$Res> {
+  factory _$$PolygonImplCopyWith(
+          _$PolygonImpl value, $Res Function(_$PolygonImpl) then) =
+      __$$PolygonImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({Polygon polygon});
 }
 
 /// @nodoc
-class __$PolygonCopyWithImpl<$Res> extends _$CountryGeomCopyWithImpl<$Res>
-    implements _$PolygonCopyWith<$Res> {
-  __$PolygonCopyWithImpl(_Polygon _value, $Res Function(_Polygon) _then)
-      : super(_value, (v) => _then(v as _Polygon));
+class __$$PolygonImplCopyWithImpl<$Res>
+    extends _$CountryGeomCopyWithImpl<$Res, _$PolygonImpl>
+    implements _$$PolygonImplCopyWith<$Res> {
+  __$$PolygonImplCopyWithImpl(
+      _$PolygonImpl _value, $Res Function(_$PolygonImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Polygon get _value => super._value as _Polygon;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? polygon = freezed,
+    Object? polygon = null,
   }) {
-    return _then(_Polygon(
-      polygon == freezed
+    return _then(_$PolygonImpl(
+      null == polygon
           ? _value.polygon
           : polygon // ignore: cast_nullable_to_non_nullable
               as Polygon,
@@ -1573,8 +1523,8 @@ class __$PolygonCopyWithImpl<$Res> extends _$CountryGeomCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Polygon implements _Polygon {
-  const _$_Polygon(this.polygon);
+class _$PolygonImpl implements _Polygon {
+  const _$PolygonImpl(this.polygon);
 
   @override
   final Polygon polygon;
@@ -1585,21 +1535,21 @@ class _$_Polygon implements _Polygon {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _Polygon &&
-            (identical(other.polygon, polygon) ||
-                const DeepCollectionEquality().equals(other.polygon, polygon)));
+        (other.runtimeType == runtimeType &&
+            other is _$PolygonImpl &&
+            (identical(other.polygon, polygon) || other.polygon == polygon));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(polygon);
+  int get hashCode => Object.hash(runtimeType, polygon);
 
   @JsonKey(ignore: true)
   @override
-  _$PolygonCopyWith<_Polygon> get copyWith =>
-      __$PolygonCopyWithImpl<_Polygon>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PolygonImplCopyWith<_$PolygonImpl> get copyWith =>
+      __$$PolygonImplCopyWithImpl<_$PolygonImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1613,8 +1563,8 @@ class _$_Polygon implements _Polygon {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(Polygon polygon)? polygon,
-    TResult Function(MultiPolygon polygon)? multi,
+    TResult? Function(Polygon polygon)? polygon,
+    TResult? Function(MultiPolygon polygon)? multi,
   }) {
     return polygon?.call(this.polygon);
   }
@@ -1644,8 +1594,8 @@ class _$_Polygon implements _Polygon {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Polygon value)? polygon,
-    TResult Function(_MultiPolygon value)? multi,
+    TResult? Function(_Polygon value)? polygon,
+    TResult? Function(_MultiPolygon value)? multi,
   }) {
     return polygon?.call(this);
   }
@@ -1665,38 +1615,39 @@ class _$_Polygon implements _Polygon {
 }
 
 abstract class _Polygon implements CountryGeom {
-  const factory _Polygon(Polygon polygon) = _$_Polygon;
+  const factory _Polygon(final Polygon polygon) = _$PolygonImpl;
 
-  Polygon get polygon => throw _privateConstructorUsedError;
+  @override
+  Polygon get polygon;
   @JsonKey(ignore: true)
-  _$PolygonCopyWith<_Polygon> get copyWith =>
+  _$$PolygonImplCopyWith<_$PolygonImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$MultiPolygonCopyWith<$Res> {
-  factory _$MultiPolygonCopyWith(
-          _MultiPolygon value, $Res Function(_MultiPolygon) then) =
-      __$MultiPolygonCopyWithImpl<$Res>;
+abstract class _$$MultiPolygonImplCopyWith<$Res> {
+  factory _$$MultiPolygonImplCopyWith(
+          _$MultiPolygonImpl value, $Res Function(_$MultiPolygonImpl) then) =
+      __$$MultiPolygonImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({MultiPolygon polygon});
 }
 
 /// @nodoc
-class __$MultiPolygonCopyWithImpl<$Res> extends _$CountryGeomCopyWithImpl<$Res>
-    implements _$MultiPolygonCopyWith<$Res> {
-  __$MultiPolygonCopyWithImpl(
-      _MultiPolygon _value, $Res Function(_MultiPolygon) _then)
-      : super(_value, (v) => _then(v as _MultiPolygon));
+class __$$MultiPolygonImplCopyWithImpl<$Res>
+    extends _$CountryGeomCopyWithImpl<$Res, _$MultiPolygonImpl>
+    implements _$$MultiPolygonImplCopyWith<$Res> {
+  __$$MultiPolygonImplCopyWithImpl(
+      _$MultiPolygonImpl _value, $Res Function(_$MultiPolygonImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MultiPolygon get _value => super._value as _MultiPolygon;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? polygon = freezed,
+    Object? polygon = null,
   }) {
-    return _then(_MultiPolygon(
-      polygon == freezed
+    return _then(_$MultiPolygonImpl(
+      null == polygon
           ? _value.polygon
           : polygon // ignore: cast_nullable_to_non_nullable
               as MultiPolygon,
@@ -1706,8 +1657,8 @@ class __$MultiPolygonCopyWithImpl<$Res> extends _$CountryGeomCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_MultiPolygon implements _MultiPolygon {
-  const _$_MultiPolygon(this.polygon);
+class _$MultiPolygonImpl implements _MultiPolygon {
+  const _$MultiPolygonImpl(this.polygon);
 
   @override
   final MultiPolygon polygon;
@@ -1718,21 +1669,21 @@ class _$_MultiPolygon implements _MultiPolygon {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _MultiPolygon &&
-            (identical(other.polygon, polygon) ||
-                const DeepCollectionEquality().equals(other.polygon, polygon)));
+        (other.runtimeType == runtimeType &&
+            other is _$MultiPolygonImpl &&
+            (identical(other.polygon, polygon) || other.polygon == polygon));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(polygon);
+  int get hashCode => Object.hash(runtimeType, polygon);
 
   @JsonKey(ignore: true)
   @override
-  _$MultiPolygonCopyWith<_MultiPolygon> get copyWith =>
-      __$MultiPolygonCopyWithImpl<_MultiPolygon>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MultiPolygonImplCopyWith<_$MultiPolygonImpl> get copyWith =>
+      __$$MultiPolygonImplCopyWithImpl<_$MultiPolygonImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1746,8 +1697,8 @@ class _$_MultiPolygon implements _MultiPolygon {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(Polygon polygon)? polygon,
-    TResult Function(MultiPolygon polygon)? multi,
+    TResult? Function(Polygon polygon)? polygon,
+    TResult? Function(MultiPolygon polygon)? multi,
   }) {
     return multi?.call(this.polygon);
   }
@@ -1777,8 +1728,8 @@ class _$_MultiPolygon implements _MultiPolygon {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Polygon value)? polygon,
-    TResult Function(_MultiPolygon value)? multi,
+    TResult? Function(_Polygon value)? polygon,
+    TResult? Function(_MultiPolygon value)? multi,
   }) {
     return multi?.call(this);
   }
@@ -1798,33 +1749,14 @@ class _$_MultiPolygon implements _MultiPolygon {
 }
 
 abstract class _MultiPolygon implements CountryGeom {
-  const factory _MultiPolygon(MultiPolygon polygon) = _$_MultiPolygon;
+  const factory _MultiPolygon(final MultiPolygon polygon) = _$MultiPolygonImpl;
 
-  MultiPolygon get polygon => throw _privateConstructorUsedError;
+  @override
+  MultiPolygon get polygon;
   @JsonKey(ignore: true)
-  _$MultiPolygonCopyWith<_MultiPolygon> get copyWith =>
+  _$$MultiPolygonImplCopyWith<_$MultiPolygonImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$ResultTearOff {
-  const _$ResultTearOff();
-
-  _Ok<T> ok<T>(T t) {
-    return _Ok<T>(
-      t,
-    );
-  }
-
-  _Fail<T> fail<T>(Object error) {
-    return _Fail<T>(
-      error,
-    );
-  }
-}
-
-/// @nodoc
-const $Result = _$ResultTearOff();
 
 /// @nodoc
 mixin _$Result<T> {
@@ -1836,8 +1768,8 @@ mixin _$Result<T> {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(T t)? ok,
-    TResult Function(Object error)? fail,
+    TResult? Function(T t)? ok,
+    TResult? Function(Object error)? fail,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -1855,8 +1787,8 @@ mixin _$Result<T> {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Ok<T> value)? ok,
-    TResult Function(_Fail<T> value)? fail,
+    TResult? Function(_Ok<T> value)? ok,
+    TResult? Function(_Fail<T> value)? fail,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -1871,40 +1803,43 @@ mixin _$Result<T> {
 /// @nodoc
 abstract class $ResultCopyWith<T, $Res> {
   factory $ResultCopyWith(Result<T> value, $Res Function(Result<T>) then) =
-      _$ResultCopyWithImpl<T, $Res>;
+      _$ResultCopyWithImpl<T, $Res, Result<T>>;
 }
 
 /// @nodoc
-class _$ResultCopyWithImpl<T, $Res> implements $ResultCopyWith<T, $Res> {
+class _$ResultCopyWithImpl<T, $Res, $Val extends Result<T>>
+    implements $ResultCopyWith<T, $Res> {
   _$ResultCopyWithImpl(this._value, this._then);
 
-  final Result<T> _value;
   // ignore: unused_field
-  final $Res Function(Result<T>) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$OkCopyWith<T, $Res> {
-  factory _$OkCopyWith(_Ok<T> value, $Res Function(_Ok<T>) then) =
-      __$OkCopyWithImpl<T, $Res>;
+abstract class _$$OkImplCopyWith<T, $Res> {
+  factory _$$OkImplCopyWith(
+          _$OkImpl<T> value, $Res Function(_$OkImpl<T>) then) =
+      __$$OkImplCopyWithImpl<T, $Res>;
+  @useResult
   $Res call({T t});
 }
 
 /// @nodoc
-class __$OkCopyWithImpl<T, $Res> extends _$ResultCopyWithImpl<T, $Res>
-    implements _$OkCopyWith<T, $Res> {
-  __$OkCopyWithImpl(_Ok<T> _value, $Res Function(_Ok<T>) _then)
-      : super(_value, (v) => _then(v as _Ok<T>));
+class __$$OkImplCopyWithImpl<T, $Res>
+    extends _$ResultCopyWithImpl<T, $Res, _$OkImpl<T>>
+    implements _$$OkImplCopyWith<T, $Res> {
+  __$$OkImplCopyWithImpl(_$OkImpl<T> _value, $Res Function(_$OkImpl<T>) _then)
+      : super(_value, _then);
 
-  @override
-  _Ok<T> get _value => super._value as _Ok<T>;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? t = freezed,
   }) {
-    return _then(_Ok<T>(
-      t == freezed
+    return _then(_$OkImpl<T>(
+      freezed == t
           ? _value.t
           : t // ignore: cast_nullable_to_non_nullable
               as T,
@@ -1914,8 +1849,8 @@ class __$OkCopyWithImpl<T, $Res> extends _$ResultCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$_Ok<T> implements _Ok<T> {
-  const _$_Ok(this.t);
+class _$OkImpl<T> implements _Ok<T> {
+  const _$OkImpl(this.t);
 
   @override
   final T t;
@@ -1926,21 +1861,22 @@ class _$_Ok<T> implements _Ok<T> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _Ok<T> &&
-            (identical(other.t, t) ||
-                const DeepCollectionEquality().equals(other.t, t)));
+        (other.runtimeType == runtimeType &&
+            other is _$OkImpl<T> &&
+            const DeepCollectionEquality().equals(other.t, t));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(t);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(t));
 
   @JsonKey(ignore: true)
   @override
-  _$OkCopyWith<T, _Ok<T>> get copyWith =>
-      __$OkCopyWithImpl<T, _Ok<T>>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$OkImplCopyWith<T, _$OkImpl<T>> get copyWith =>
+      __$$OkImplCopyWithImpl<T, _$OkImpl<T>>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1954,8 +1890,8 @@ class _$_Ok<T> implements _Ok<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(T t)? ok,
-    TResult Function(Object error)? fail,
+    TResult? Function(T t)? ok,
+    TResult? Function(Object error)? fail,
   }) {
     return ok?.call(t);
   }
@@ -1985,8 +1921,8 @@ class _$_Ok<T> implements _Ok<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Ok<T> value)? ok,
-    TResult Function(_Fail<T> value)? fail,
+    TResult? Function(_Ok<T> value)? ok,
+    TResult? Function(_Fail<T> value)? fail,
   }) {
     return ok?.call(this);
   }
@@ -2006,46 +1942,46 @@ class _$_Ok<T> implements _Ok<T> {
 }
 
 abstract class _Ok<T> implements Result<T> {
-  const factory _Ok(T t) = _$_Ok<T>;
+  const factory _Ok(final T t) = _$OkImpl<T>;
 
-  T get t => throw _privateConstructorUsedError;
+  T get t;
   @JsonKey(ignore: true)
-  _$OkCopyWith<T, _Ok<T>> get copyWith => throw _privateConstructorUsedError;
+  _$$OkImplCopyWith<T, _$OkImpl<T>> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$FailCopyWith<T, $Res> {
-  factory _$FailCopyWith(_Fail<T> value, $Res Function(_Fail<T>) then) =
-      __$FailCopyWithImpl<T, $Res>;
+abstract class _$$FailImplCopyWith<T, $Res> {
+  factory _$$FailImplCopyWith(
+          _$FailImpl<T> value, $Res Function(_$FailImpl<T>) then) =
+      __$$FailImplCopyWithImpl<T, $Res>;
+  @useResult
   $Res call({Object error});
 }
 
 /// @nodoc
-class __$FailCopyWithImpl<T, $Res> extends _$ResultCopyWithImpl<T, $Res>
-    implements _$FailCopyWith<T, $Res> {
-  __$FailCopyWithImpl(_Fail<T> _value, $Res Function(_Fail<T>) _then)
-      : super(_value, (v) => _then(v as _Fail<T>));
+class __$$FailImplCopyWithImpl<T, $Res>
+    extends _$ResultCopyWithImpl<T, $Res, _$FailImpl<T>>
+    implements _$$FailImplCopyWith<T, $Res> {
+  __$$FailImplCopyWithImpl(
+      _$FailImpl<T> _value, $Res Function(_$FailImpl<T>) _then)
+      : super(_value, _then);
 
-  @override
-  _Fail<T> get _value => super._value as _Fail<T>;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = freezed,
+    Object? error = null,
   }) {
-    return _then(_Fail<T>(
-      error == freezed
-          ? _value.error
-          : error // ignore: cast_nullable_to_non_nullable
-              as Object,
+    return _then(_$FailImpl<T>(
+      null == error ? _value.error : error,
     ));
   }
 }
 
 /// @nodoc
 
-class _$_Fail<T> implements _Fail<T> {
-  const _$_Fail(this.error);
+class _$FailImpl<T> implements _Fail<T> {
+  const _$FailImpl(this.error);
 
   @override
   final Object error;
@@ -2056,21 +1992,22 @@ class _$_Fail<T> implements _Fail<T> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _Fail<T> &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+        (other.runtimeType == runtimeType &&
+            other is _$FailImpl<T> &&
+            const DeepCollectionEquality().equals(other.error, error));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(error));
 
   @JsonKey(ignore: true)
   @override
-  _$FailCopyWith<T, _Fail<T>> get copyWith =>
-      __$FailCopyWithImpl<T, _Fail<T>>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FailImplCopyWith<T, _$FailImpl<T>> get copyWith =>
+      __$$FailImplCopyWithImpl<T, _$FailImpl<T>>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2084,8 +2021,8 @@ class _$_Fail<T> implements _Fail<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(T t)? ok,
-    TResult Function(Object error)? fail,
+    TResult? Function(T t)? ok,
+    TResult? Function(Object error)? fail,
   }) {
     return fail?.call(error);
   }
@@ -2115,8 +2052,8 @@ class _$_Fail<T> implements _Fail<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Ok<T> value)? ok,
-    TResult Function(_Fail<T> value)? fail,
+    TResult? Function(_Ok<T> value)? ok,
+    TResult? Function(_Fail<T> value)? fail,
   }) {
     return fail?.call(this);
   }
@@ -2136,10 +2073,10 @@ class _$_Fail<T> implements _Fail<T> {
 }
 
 abstract class _Fail<T> implements Result<T> {
-  const factory _Fail(Object error) = _$_Fail<T>;
+  const factory _Fail(final Object error) = _$FailImpl<T>;
 
-  Object get error => throw _privateConstructorUsedError;
+  Object get error;
   @JsonKey(ignore: true)
-  _$FailCopyWith<T, _Fail<T>> get copyWith =>
+  _$$FailImplCopyWith<T, _$FailImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }

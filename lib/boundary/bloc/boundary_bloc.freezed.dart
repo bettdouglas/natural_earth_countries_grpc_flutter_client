@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'boundary_bloc.dart';
 
@@ -11,33 +12,7 @@ part of 'boundary_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$BoundaryEventTearOff {
-  const _$BoundaryEventTearOff();
-
-  _Started started() {
-    return const _Started();
-  }
-
-  _Add add(LatLng point) {
-    return _Add(
-      point,
-    );
-  }
-
-  _Clear clear() {
-    return const _Clear();
-  }
-
-  _Undo undo() {
-    return const _Undo();
-  }
-}
-
-/// @nodoc
-const $BoundaryEvent = _$BoundaryEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$BoundaryEvent {
@@ -51,10 +26,10 @@ mixin _$BoundaryEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(LatLng point)? add,
-    TResult Function()? clear,
-    TResult Function()? undo,
+    TResult? Function()? started,
+    TResult? Function(LatLng point)? add,
+    TResult? Function()? clear,
+    TResult? Function()? undo,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -76,10 +51,10 @@ mixin _$BoundaryEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_Add value)? add,
-    TResult Function(_Clear value)? clear,
-    TResult Function(_Undo value)? undo,
+    TResult? Function(_Started value)? started,
+    TResult? Function(_Add value)? add,
+    TResult? Function(_Clear value)? clear,
+    TResult? Function(_Undo value)? undo,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -97,39 +72,40 @@ mixin _$BoundaryEvent {
 abstract class $BoundaryEventCopyWith<$Res> {
   factory $BoundaryEventCopyWith(
           BoundaryEvent value, $Res Function(BoundaryEvent) then) =
-      _$BoundaryEventCopyWithImpl<$Res>;
+      _$BoundaryEventCopyWithImpl<$Res, BoundaryEvent>;
 }
 
 /// @nodoc
-class _$BoundaryEventCopyWithImpl<$Res>
+class _$BoundaryEventCopyWithImpl<$Res, $Val extends BoundaryEvent>
     implements $BoundaryEventCopyWith<$Res> {
   _$BoundaryEventCopyWithImpl(this._value, this._then);
 
-  final BoundaryEvent _value;
   // ignore: unused_field
-  final $Res Function(BoundaryEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$StartedCopyWith<$Res> {
-  factory _$StartedCopyWith(_Started value, $Res Function(_Started) then) =
-      __$StartedCopyWithImpl<$Res>;
+abstract class _$$StartedImplCopyWith<$Res> {
+  factory _$$StartedImplCopyWith(
+          _$StartedImpl value, $Res Function(_$StartedImpl) then) =
+      __$$StartedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$StartedCopyWithImpl<$Res> extends _$BoundaryEventCopyWithImpl<$Res>
-    implements _$StartedCopyWith<$Res> {
-  __$StartedCopyWithImpl(_Started _value, $Res Function(_Started) _then)
-      : super(_value, (v) => _then(v as _Started));
-
-  @override
-  _Started get _value => super._value as _Started;
+class __$$StartedImplCopyWithImpl<$Res>
+    extends _$BoundaryEventCopyWithImpl<$Res, _$StartedImpl>
+    implements _$$StartedImplCopyWith<$Res> {
+  __$$StartedImplCopyWithImpl(
+      _$StartedImpl _value, $Res Function(_$StartedImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Started implements _Started {
-  const _$_Started();
+class _$StartedImpl implements _Started {
+  const _$StartedImpl();
 
   @override
   String toString() {
@@ -137,8 +113,9 @@ class _$_Started implements _Started {
   }
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _Started);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$StartedImpl);
   }
 
   @override
@@ -158,10 +135,10 @@ class _$_Started implements _Started {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(LatLng point)? add,
-    TResult Function()? clear,
-    TResult Function()? undo,
+    TResult? Function()? started,
+    TResult? Function(LatLng point)? add,
+    TResult? Function()? clear,
+    TResult? Function()? undo,
   }) {
     return started?.call();
   }
@@ -195,10 +172,10 @@ class _$_Started implements _Started {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_Add value)? add,
-    TResult Function(_Clear value)? clear,
-    TResult Function(_Undo value)? undo,
+    TResult? Function(_Started value)? started,
+    TResult? Function(_Add value)? add,
+    TResult? Function(_Clear value)? clear,
+    TResult? Function(_Undo value)? undo,
   }) {
     return started?.call(this);
   }
@@ -220,31 +197,31 @@ class _$_Started implements _Started {
 }
 
 abstract class _Started implements BoundaryEvent {
-  const factory _Started() = _$_Started;
+  const factory _Started() = _$StartedImpl;
 }
 
 /// @nodoc
-abstract class _$AddCopyWith<$Res> {
-  factory _$AddCopyWith(_Add value, $Res Function(_Add) then) =
-      __$AddCopyWithImpl<$Res>;
+abstract class _$$AddImplCopyWith<$Res> {
+  factory _$$AddImplCopyWith(_$AddImpl value, $Res Function(_$AddImpl) then) =
+      __$$AddImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({LatLng point});
 }
 
 /// @nodoc
-class __$AddCopyWithImpl<$Res> extends _$BoundaryEventCopyWithImpl<$Res>
-    implements _$AddCopyWith<$Res> {
-  __$AddCopyWithImpl(_Add _value, $Res Function(_Add) _then)
-      : super(_value, (v) => _then(v as _Add));
+class __$$AddImplCopyWithImpl<$Res>
+    extends _$BoundaryEventCopyWithImpl<$Res, _$AddImpl>
+    implements _$$AddImplCopyWith<$Res> {
+  __$$AddImplCopyWithImpl(_$AddImpl _value, $Res Function(_$AddImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Add get _value => super._value as _Add;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? point = freezed,
+    Object? point = null,
   }) {
-    return _then(_Add(
-      point == freezed
+    return _then(_$AddImpl(
+      null == point
           ? _value.point
           : point // ignore: cast_nullable_to_non_nullable
               as LatLng,
@@ -254,8 +231,8 @@ class __$AddCopyWithImpl<$Res> extends _$BoundaryEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Add implements _Add {
-  const _$_Add(this.point);
+class _$AddImpl implements _Add {
+  const _$AddImpl(this.point);
 
   @override
   final LatLng point;
@@ -266,21 +243,21 @@ class _$_Add implements _Add {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _Add &&
-            (identical(other.point, point) ||
-                const DeepCollectionEquality().equals(other.point, point)));
+        (other.runtimeType == runtimeType &&
+            other is _$AddImpl &&
+            (identical(other.point, point) || other.point == point));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(point);
+  int get hashCode => Object.hash(runtimeType, point);
 
   @JsonKey(ignore: true)
   @override
-  _$AddCopyWith<_Add> get copyWith =>
-      __$AddCopyWithImpl<_Add>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AddImplCopyWith<_$AddImpl> get copyWith =>
+      __$$AddImplCopyWithImpl<_$AddImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -296,10 +273,10 @@ class _$_Add implements _Add {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(LatLng point)? add,
-    TResult Function()? clear,
-    TResult Function()? undo,
+    TResult? Function()? started,
+    TResult? Function(LatLng point)? add,
+    TResult? Function()? clear,
+    TResult? Function()? undo,
   }) {
     return add?.call(point);
   }
@@ -333,10 +310,10 @@ class _$_Add implements _Add {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_Add value)? add,
-    TResult Function(_Clear value)? clear,
-    TResult Function(_Undo value)? undo,
+    TResult? Function(_Started value)? started,
+    TResult? Function(_Add value)? add,
+    TResult? Function(_Clear value)? clear,
+    TResult? Function(_Undo value)? undo,
   }) {
     return add?.call(this);
   }
@@ -358,33 +335,34 @@ class _$_Add implements _Add {
 }
 
 abstract class _Add implements BoundaryEvent {
-  const factory _Add(LatLng point) = _$_Add;
+  const factory _Add(final LatLng point) = _$AddImpl;
 
-  LatLng get point => throw _privateConstructorUsedError;
+  LatLng get point;
   @JsonKey(ignore: true)
-  _$AddCopyWith<_Add> get copyWith => throw _privateConstructorUsedError;
+  _$$AddImplCopyWith<_$AddImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ClearCopyWith<$Res> {
-  factory _$ClearCopyWith(_Clear value, $Res Function(_Clear) then) =
-      __$ClearCopyWithImpl<$Res>;
+abstract class _$$ClearImplCopyWith<$Res> {
+  factory _$$ClearImplCopyWith(
+          _$ClearImpl value, $Res Function(_$ClearImpl) then) =
+      __$$ClearImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$ClearCopyWithImpl<$Res> extends _$BoundaryEventCopyWithImpl<$Res>
-    implements _$ClearCopyWith<$Res> {
-  __$ClearCopyWithImpl(_Clear _value, $Res Function(_Clear) _then)
-      : super(_value, (v) => _then(v as _Clear));
-
-  @override
-  _Clear get _value => super._value as _Clear;
+class __$$ClearImplCopyWithImpl<$Res>
+    extends _$BoundaryEventCopyWithImpl<$Res, _$ClearImpl>
+    implements _$$ClearImplCopyWith<$Res> {
+  __$$ClearImplCopyWithImpl(
+      _$ClearImpl _value, $Res Function(_$ClearImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Clear implements _Clear {
-  const _$_Clear();
+class _$ClearImpl implements _Clear {
+  const _$ClearImpl();
 
   @override
   String toString() {
@@ -392,8 +370,9 @@ class _$_Clear implements _Clear {
   }
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _Clear);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$ClearImpl);
   }
 
   @override
@@ -413,10 +392,10 @@ class _$_Clear implements _Clear {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(LatLng point)? add,
-    TResult Function()? clear,
-    TResult Function()? undo,
+    TResult? Function()? started,
+    TResult? Function(LatLng point)? add,
+    TResult? Function()? clear,
+    TResult? Function()? undo,
   }) {
     return clear?.call();
   }
@@ -450,10 +429,10 @@ class _$_Clear implements _Clear {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_Add value)? add,
-    TResult Function(_Clear value)? clear,
-    TResult Function(_Undo value)? undo,
+    TResult? Function(_Started value)? started,
+    TResult? Function(_Add value)? add,
+    TResult? Function(_Clear value)? clear,
+    TResult? Function(_Undo value)? undo,
   }) {
     return clear?.call(this);
   }
@@ -475,29 +454,28 @@ class _$_Clear implements _Clear {
 }
 
 abstract class _Clear implements BoundaryEvent {
-  const factory _Clear() = _$_Clear;
+  const factory _Clear() = _$ClearImpl;
 }
 
 /// @nodoc
-abstract class _$UndoCopyWith<$Res> {
-  factory _$UndoCopyWith(_Undo value, $Res Function(_Undo) then) =
-      __$UndoCopyWithImpl<$Res>;
+abstract class _$$UndoImplCopyWith<$Res> {
+  factory _$$UndoImplCopyWith(
+          _$UndoImpl value, $Res Function(_$UndoImpl) then) =
+      __$$UndoImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$UndoCopyWithImpl<$Res> extends _$BoundaryEventCopyWithImpl<$Res>
-    implements _$UndoCopyWith<$Res> {
-  __$UndoCopyWithImpl(_Undo _value, $Res Function(_Undo) _then)
-      : super(_value, (v) => _then(v as _Undo));
-
-  @override
-  _Undo get _value => super._value as _Undo;
+class __$$UndoImplCopyWithImpl<$Res>
+    extends _$BoundaryEventCopyWithImpl<$Res, _$UndoImpl>
+    implements _$$UndoImplCopyWith<$Res> {
+  __$$UndoImplCopyWithImpl(_$UndoImpl _value, $Res Function(_$UndoImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Undo implements _Undo {
-  const _$_Undo();
+class _$UndoImpl implements _Undo {
+  const _$UndoImpl();
 
   @override
   String toString() {
@@ -505,8 +483,9 @@ class _$_Undo implements _Undo {
   }
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _Undo);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$UndoImpl);
   }
 
   @override
@@ -526,10 +505,10 @@ class _$_Undo implements _Undo {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(LatLng point)? add,
-    TResult Function()? clear,
-    TResult Function()? undo,
+    TResult? Function()? started,
+    TResult? Function(LatLng point)? add,
+    TResult? Function()? clear,
+    TResult? Function()? undo,
   }) {
     return undo?.call();
   }
@@ -563,10 +542,10 @@ class _$_Undo implements _Undo {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_Add value)? add,
-    TResult Function(_Clear value)? clear,
-    TResult Function(_Undo value)? undo,
+    TResult? Function(_Started value)? started,
+    TResult? Function(_Add value)? add,
+    TResult? Function(_Clear value)? clear,
+    TResult? Function(_Undo value)? undo,
   }) {
     return undo?.call(this);
   }
@@ -588,32 +567,8 @@ class _$_Undo implements _Undo {
 }
 
 abstract class _Undo implements BoundaryEvent {
-  const factory _Undo() = _$_Undo;
+  const factory _Undo() = _$UndoImpl;
 }
-
-/// @nodoc
-class _$BoundaryStateTearOff {
-  const _$BoundaryStateTearOff();
-
-  _Initial empty() {
-    return const _Initial();
-  }
-
-  _Unclosed unclosed(List<LatLng> boundary) {
-    return _Unclosed(
-      boundary,
-    );
-  }
-
-  _Closed closed(List<LatLng> boundary) {
-    return _Closed(
-      boundary,
-    );
-  }
-}
-
-/// @nodoc
-const $BoundaryState = _$BoundaryStateTearOff();
 
 /// @nodoc
 mixin _$BoundaryState {
@@ -626,9 +581,9 @@ mixin _$BoundaryState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? empty,
-    TResult Function(List<LatLng> boundary)? unclosed,
-    TResult Function(List<LatLng> boundary)? closed,
+    TResult? Function()? empty,
+    TResult? Function(List<LatLng> boundary)? unclosed,
+    TResult? Function(List<LatLng> boundary)? closed,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -648,9 +603,9 @@ mixin _$BoundaryState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? empty,
-    TResult Function(_Unclosed value)? unclosed,
-    TResult Function(_Closed value)? closed,
+    TResult? Function(_Initial value)? empty,
+    TResult? Function(_Unclosed value)? unclosed,
+    TResult? Function(_Closed value)? closed,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -667,39 +622,40 @@ mixin _$BoundaryState {
 abstract class $BoundaryStateCopyWith<$Res> {
   factory $BoundaryStateCopyWith(
           BoundaryState value, $Res Function(BoundaryState) then) =
-      _$BoundaryStateCopyWithImpl<$Res>;
+      _$BoundaryStateCopyWithImpl<$Res, BoundaryState>;
 }
 
 /// @nodoc
-class _$BoundaryStateCopyWithImpl<$Res>
+class _$BoundaryStateCopyWithImpl<$Res, $Val extends BoundaryState>
     implements $BoundaryStateCopyWith<$Res> {
   _$BoundaryStateCopyWithImpl(this._value, this._then);
 
-  final BoundaryState _value;
   // ignore: unused_field
-  final $Res Function(BoundaryState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$InitialCopyWith<$Res> {
-  factory _$InitialCopyWith(_Initial value, $Res Function(_Initial) then) =
-      __$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialImplCopyWith<$Res> {
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$InitialCopyWithImpl<$Res> extends _$BoundaryStateCopyWithImpl<$Res>
-    implements _$InitialCopyWith<$Res> {
-  __$InitialCopyWithImpl(_Initial _value, $Res Function(_Initial) _then)
-      : super(_value, (v) => _then(v as _Initial));
-
-  @override
-  _Initial get _value => super._value as _Initial;
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$BoundaryStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Initial implements _Initial {
-  const _$_Initial();
+class _$InitialImpl implements _Initial {
+  const _$InitialImpl();
 
   @override
   String toString() {
@@ -707,8 +663,9 @@ class _$_Initial implements _Initial {
   }
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _Initial);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$InitialImpl);
   }
 
   @override
@@ -727,9 +684,9 @@ class _$_Initial implements _Initial {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? empty,
-    TResult Function(List<LatLng> boundary)? unclosed,
-    TResult Function(List<LatLng> boundary)? closed,
+    TResult? Function()? empty,
+    TResult? Function(List<LatLng> boundary)? unclosed,
+    TResult? Function(List<LatLng> boundary)? closed,
   }) {
     return empty?.call();
   }
@@ -761,9 +718,9 @@ class _$_Initial implements _Initial {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? empty,
-    TResult Function(_Unclosed value)? unclosed,
-    TResult Function(_Closed value)? closed,
+    TResult? Function(_Initial value)? empty,
+    TResult? Function(_Unclosed value)? unclosed,
+    TResult? Function(_Closed value)? closed,
   }) {
     return empty?.call(this);
   }
@@ -784,32 +741,34 @@ class _$_Initial implements _Initial {
 }
 
 abstract class _Initial implements BoundaryState {
-  const factory _Initial() = _$_Initial;
+  const factory _Initial() = _$InitialImpl;
 }
 
 /// @nodoc
-abstract class _$UnclosedCopyWith<$Res> {
-  factory _$UnclosedCopyWith(_Unclosed value, $Res Function(_Unclosed) then) =
-      __$UnclosedCopyWithImpl<$Res>;
+abstract class _$$UnclosedImplCopyWith<$Res> {
+  factory _$$UnclosedImplCopyWith(
+          _$UnclosedImpl value, $Res Function(_$UnclosedImpl) then) =
+      __$$UnclosedImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({List<LatLng> boundary});
 }
 
 /// @nodoc
-class __$UnclosedCopyWithImpl<$Res> extends _$BoundaryStateCopyWithImpl<$Res>
-    implements _$UnclosedCopyWith<$Res> {
-  __$UnclosedCopyWithImpl(_Unclosed _value, $Res Function(_Unclosed) _then)
-      : super(_value, (v) => _then(v as _Unclosed));
+class __$$UnclosedImplCopyWithImpl<$Res>
+    extends _$BoundaryStateCopyWithImpl<$Res, _$UnclosedImpl>
+    implements _$$UnclosedImplCopyWith<$Res> {
+  __$$UnclosedImplCopyWithImpl(
+      _$UnclosedImpl _value, $Res Function(_$UnclosedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Unclosed get _value => super._value as _Unclosed;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? boundary = freezed,
+    Object? boundary = null,
   }) {
-    return _then(_Unclosed(
-      boundary == freezed
-          ? _value.boundary
+    return _then(_$UnclosedImpl(
+      null == boundary
+          ? _value._boundary
           : boundary // ignore: cast_nullable_to_non_nullable
               as List<LatLng>,
     ));
@@ -818,11 +777,16 @@ class __$UnclosedCopyWithImpl<$Res> extends _$BoundaryStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Unclosed implements _Unclosed {
-  const _$_Unclosed(this.boundary);
+class _$UnclosedImpl implements _Unclosed {
+  const _$UnclosedImpl(final List<LatLng> boundary) : _boundary = boundary;
 
+  final List<LatLng> _boundary;
   @override
-  final List<LatLng> boundary;
+  List<LatLng> get boundary {
+    if (_boundary is EqualUnmodifiableListView) return _boundary;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_boundary);
+  }
 
   @override
   String toString() {
@@ -830,22 +794,22 @@ class _$_Unclosed implements _Unclosed {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _Unclosed &&
-            (identical(other.boundary, boundary) ||
-                const DeepCollectionEquality()
-                    .equals(other.boundary, boundary)));
+        (other.runtimeType == runtimeType &&
+            other is _$UnclosedImpl &&
+            const DeepCollectionEquality().equals(other._boundary, _boundary));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(boundary);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_boundary));
 
   @JsonKey(ignore: true)
   @override
-  _$UnclosedCopyWith<_Unclosed> get copyWith =>
-      __$UnclosedCopyWithImpl<_Unclosed>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnclosedImplCopyWith<_$UnclosedImpl> get copyWith =>
+      __$$UnclosedImplCopyWithImpl<_$UnclosedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -860,9 +824,9 @@ class _$_Unclosed implements _Unclosed {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? empty,
-    TResult Function(List<LatLng> boundary)? unclosed,
-    TResult Function(List<LatLng> boundary)? closed,
+    TResult? Function()? empty,
+    TResult? Function(List<LatLng> boundary)? unclosed,
+    TResult? Function(List<LatLng> boundary)? closed,
   }) {
     return unclosed?.call(boundary);
   }
@@ -894,9 +858,9 @@ class _$_Unclosed implements _Unclosed {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? empty,
-    TResult Function(_Unclosed value)? unclosed,
-    TResult Function(_Closed value)? closed,
+    TResult? Function(_Initial value)? empty,
+    TResult? Function(_Unclosed value)? unclosed,
+    TResult? Function(_Closed value)? closed,
   }) {
     return unclosed?.call(this);
   }
@@ -917,37 +881,39 @@ class _$_Unclosed implements _Unclosed {
 }
 
 abstract class _Unclosed implements BoundaryState {
-  const factory _Unclosed(List<LatLng> boundary) = _$_Unclosed;
+  const factory _Unclosed(final List<LatLng> boundary) = _$UnclosedImpl;
 
-  List<LatLng> get boundary => throw _privateConstructorUsedError;
+  List<LatLng> get boundary;
   @JsonKey(ignore: true)
-  _$UnclosedCopyWith<_Unclosed> get copyWith =>
+  _$$UnclosedImplCopyWith<_$UnclosedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ClosedCopyWith<$Res> {
-  factory _$ClosedCopyWith(_Closed value, $Res Function(_Closed) then) =
-      __$ClosedCopyWithImpl<$Res>;
+abstract class _$$ClosedImplCopyWith<$Res> {
+  factory _$$ClosedImplCopyWith(
+          _$ClosedImpl value, $Res Function(_$ClosedImpl) then) =
+      __$$ClosedImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({List<LatLng> boundary});
 }
 
 /// @nodoc
-class __$ClosedCopyWithImpl<$Res> extends _$BoundaryStateCopyWithImpl<$Res>
-    implements _$ClosedCopyWith<$Res> {
-  __$ClosedCopyWithImpl(_Closed _value, $Res Function(_Closed) _then)
-      : super(_value, (v) => _then(v as _Closed));
+class __$$ClosedImplCopyWithImpl<$Res>
+    extends _$BoundaryStateCopyWithImpl<$Res, _$ClosedImpl>
+    implements _$$ClosedImplCopyWith<$Res> {
+  __$$ClosedImplCopyWithImpl(
+      _$ClosedImpl _value, $Res Function(_$ClosedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Closed get _value => super._value as _Closed;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? boundary = freezed,
+    Object? boundary = null,
   }) {
-    return _then(_Closed(
-      boundary == freezed
-          ? _value.boundary
+    return _then(_$ClosedImpl(
+      null == boundary
+          ? _value._boundary
           : boundary // ignore: cast_nullable_to_non_nullable
               as List<LatLng>,
     ));
@@ -956,11 +922,16 @@ class __$ClosedCopyWithImpl<$Res> extends _$BoundaryStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Closed implements _Closed {
-  const _$_Closed(this.boundary);
+class _$ClosedImpl implements _Closed {
+  const _$ClosedImpl(final List<LatLng> boundary) : _boundary = boundary;
 
+  final List<LatLng> _boundary;
   @override
-  final List<LatLng> boundary;
+  List<LatLng> get boundary {
+    if (_boundary is EqualUnmodifiableListView) return _boundary;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_boundary);
+  }
 
   @override
   String toString() {
@@ -968,22 +939,22 @@ class _$_Closed implements _Closed {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _Closed &&
-            (identical(other.boundary, boundary) ||
-                const DeepCollectionEquality()
-                    .equals(other.boundary, boundary)));
+        (other.runtimeType == runtimeType &&
+            other is _$ClosedImpl &&
+            const DeepCollectionEquality().equals(other._boundary, _boundary));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(boundary);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_boundary));
 
   @JsonKey(ignore: true)
   @override
-  _$ClosedCopyWith<_Closed> get copyWith =>
-      __$ClosedCopyWithImpl<_Closed>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ClosedImplCopyWith<_$ClosedImpl> get copyWith =>
+      __$$ClosedImplCopyWithImpl<_$ClosedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -998,9 +969,9 @@ class _$_Closed implements _Closed {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? empty,
-    TResult Function(List<LatLng> boundary)? unclosed,
-    TResult Function(List<LatLng> boundary)? closed,
+    TResult? Function()? empty,
+    TResult? Function(List<LatLng> boundary)? unclosed,
+    TResult? Function(List<LatLng> boundary)? closed,
   }) {
     return closed?.call(boundary);
   }
@@ -1032,9 +1003,9 @@ class _$_Closed implements _Closed {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? empty,
-    TResult Function(_Unclosed value)? unclosed,
-    TResult Function(_Closed value)? closed,
+    TResult? Function(_Initial value)? empty,
+    TResult? Function(_Unclosed value)? unclosed,
+    TResult? Function(_Closed value)? closed,
   }) {
     return closed?.call(this);
   }
@@ -1055,9 +1026,10 @@ class _$_Closed implements _Closed {
 }
 
 abstract class _Closed implements BoundaryState {
-  const factory _Closed(List<LatLng> boundary) = _$_Closed;
+  const factory _Closed(final List<LatLng> boundary) = _$ClosedImpl;
 
-  List<LatLng> get boundary => throw _privateConstructorUsedError;
+  List<LatLng> get boundary;
   @JsonKey(ignore: true)
-  _$ClosedCopyWith<_Closed> get copyWith => throw _privateConstructorUsedError;
+  _$$ClosedImplCopyWith<_$ClosedImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }

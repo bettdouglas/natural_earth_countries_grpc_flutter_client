@@ -2,13 +2,14 @@ import 'dart:math';
 
 import 'package:dart_jts/dart_jts.dart' as jts;
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 
 extension Precision on double {
   double toPrecision(int fractionDigits) {
     final mod = pow(10, fractionDigits.toDouble());
-    return ((this * mod).round().toDouble() / mod);
+    return (this * mod).round().toDouble() / mod;
   }
 }
 
@@ -33,13 +34,13 @@ extension LineStringToLatLng on jts.LineString {
 
 extension PointPlotExtension on jts.Point {
   Marker plot({
-    required WidgetBuilder builder,
+    required Widget child,
     required double height,
     required double width,
   }) {
     return Marker(
       point: LatLng(getY(), getX()),
-      builder: builder,
+      child: child,
       height: height,
       width: width,
     );
@@ -50,14 +51,14 @@ extension PointPlotExtension on jts.Point {
 
 extension MultiPointPlotExtension on jts.MultiPoint {
   List<Marker> plot({
-    required WidgetBuilder builder,
+    required Widget child,
     required double height,
     required double width,
   }) {
     return List.generate(
       getNumPoints(),
       (index) => (getGeometryN(index) as jts.Point).plot(
-        builder: builder,
+        child: child,
         height: height,
         width: width,
       ),
@@ -70,13 +71,15 @@ extension PolygonPlotExtension on jts.Polygon {
     required Color borderColor,
     required Color color,
     required double borderStrokeWidth,
-    bool isDotted = false,
+    required String label,
+    required TextStyle labelStyle,
   }) {
     return Polygon(
       color: color,
       borderColor: borderColor,
       borderStrokeWidth: borderStrokeWidth,
-      isDotted: isDotted,
+      label: label,
+      labelStyle: labelStyle,
       // holePointsList: List.generate(
       //   getNumInteriorRing(),
       //   (index) => getInteriorRingN(index).toLatLng(),
@@ -89,17 +92,15 @@ extension PolygonPlotExtension on jts.Polygon {
     Color borderColor,
     double borderStrokeWidth,
     Color color,
-    bool isDotted,
-    bool disableHolesBorder,
     List<LatLng> points,
-    List<List<LatLng>> holes,
-  ) {
+    List<List<LatLng>> holes, {
+    bool disableHolesBorder = false,
+  }) {
     return Polygon(
       borderColor: borderColor,
       borderStrokeWidth: borderStrokeWidth,
       color: color,
       // disableHolesBorder: disableHolesBorder,
-      isDotted: isDotted,
       // holePointsList: holes,
       points: points,
     );
@@ -114,18 +115,21 @@ extension NultiPolygonPlotExtension on jts.MultiPolygon {
     required Color borderColor,
     required Color color,
     required double borderStrokeWidth,
+    required String label,
+    required TextStyle labelStyle,
     bool isDotted = false,
   }) {
     return List.generate(
       getNumGeometries(),
-      (index) => (getGeometryN(index) as jts.Polygon),
+      (index) => getGeometryN(index) as jts.Polygon,
     )
         .map(
           (e) => e.plot(
             borderColor: borderColor,
             borderStrokeWidth: borderStrokeWidth,
-            isDotted: isDotted,
             color: color,
+            label: label,
+            labelStyle: labelStyle,
           ),
         )
         .toList();
@@ -138,14 +142,13 @@ extension LineStringPlotExtension on jts.LineString {
     required double borderStrokeWidth,
     required bool isDotted,
     required Color color,
+    required double strokeWidth,
     List<double>? colorsStop,
     List<Color>? gradientColors,
-    required double strokeWidth,
   }) {
     return Polyline(
       borderColor: borderColor,
       borderStrokeWidth: borderStrokeWidth,
-      isDotted: isDotted,
       color: color,
       colorsStop: colorsStop,
       gradientColors: gradientColors,
@@ -159,15 +162,15 @@ extension MultiLineStringPlotExtension on jts.MultiLineString {
   List<Polyline> plot({
     required Color borderColor,
     required double borderStrokeWidth,
-    bool isDotted = false,
     required Color color,
+    required double strokeWidth,
+    bool isDotted = false,
     List<double>? colorsStop,
     List<Color>? gradientColors,
-    required double strokeWidth,
   }) {
     return List.generate(
       getNumGeometries(),
-      (index) => (getGeometryN(index) as jts.LineString),
+      (index) => getGeometryN(index) as jts.LineString,
     )
         .map(
           (e) => e.plot(
@@ -204,13 +207,14 @@ extension MultiLineStringPlotExtension on jts.MultiLineString {
 
 typedef IndexeLineStringBuilder = Polyline Function(int index);
 typedef PlotLineStringFn = Polyline Function(
-    Color borderColor,
-    double borderStrokeWidth,
-    bool isDotted,
-    Color color,
-    List<double> colorsStop,
-    List<Color> gradientColors,
-    double strokeWidth);
+  Color borderColor,
+  double borderStrokeWidth,
+  bool isDotted,
+  Color color,
+  List<double> colorsStop,
+  List<Color> gradientColors,
+  double strokeWidth,
+);
 
 extension MultiGeometryExtension on jts.GeometryCollection {
   // List<Widget> plotUsingGeometryN()

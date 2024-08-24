@@ -1,63 +1,64 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 // enum BaseTile { OSM, MB_DARK, MB_LIGHT, STAMEN }
 
 class BaseMap extends StatelessWidget {
   const BaseMap({
-    Key? key,
     required this.center,
-    this.markerLayerOptionsList,
-    this.polygonLayerOptionsList,
-    this.polylineLayerOptionsList,
+    Key? key,
+    this.markerLayers,
+    this.polygonLayers,
+    this.polylineLayers,
     this.onTap,
     this.zoom = 2.0,
     this.onBoundsChanged,
   }) : super(key: key);
 
   final LatLng center;
-  final List<MarkerLayerOptions>? markerLayerOptionsList;
-  final List<PolygonLayerOptions>? polygonLayerOptionsList;
-  final List<PolylineLayerOptions>? polylineLayerOptionsList;
-  final Function(LatLng)? onTap;
+  final List<MarkerLayer>? markerLayers;
+  final List<PolygonLayer>? polygonLayers;
+  final List<PolylineLayer>? polylineLayers;
+  final void Function(LatLng)? onTap;
   final double zoom;
-  final Function(LatLngBounds)? onBoundsChanged;
+  final void Function(LatLngBounds)? onBoundsChanged;
 
   @override
   Widget build(BuildContext context) {
-    final layers = <LayerOptions>[
-      TileLayerOptions(
-        urlTemplate: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-        subdomains: ['a', 'b', 'c'],
-      ),
-    ];
-
-    if (markerLayerOptionsList != null) {
-      layers.addAll(markerLayerOptionsList!);
-    }
-
-    if (polygonLayerOptionsList != null) {
-      layers.addAll(polygonLayerOptionsList!);
-    }
-
-    if (polylineLayerOptionsList != null) {
-      layers.addAll(polylineLayerOptionsList!);
-    }
-
     return FlutterMap(
-      options: MapOptions(
-        center: center,
-        zoom: zoom,
-        onTap: onTap,
-        onMapCreated: (controller) {
-          // onBoundsChanged?.call(controller.bounds!);
-        },
-        onPositionChanged: (mapPosition, _) {
-          onBoundsChanged?.call(mapPosition.bounds!);
-        },
+      options: const MapOptions(
+        initialCenter:
+            LatLng(51.509364, -0.128928), // Center the map over London
+        initialZoom: 9.2,
       ),
-      layers: layers,
+      children: [
+        if (markerLayers != null) ...markerLayers!,
+        if (polygonLayers != null) ...polygonLayers!,
+        if (polylineLayers != null) ...polylineLayers!,
+        TileLayer(
+          // Display map tiles from any source
+          urlTemplate:
+              'https://tile.openstreetmap.org/{z}/{x}/{y}.png', // OSMF's Tile Server
+          userAgentPackageName: 'com.example.app',
+          // And many more recommended properties!
+        ),
+        RichAttributionWidget(
+          // Include a stylish prebuilt attribution widget that meets all requirments
+          attributions: [
+            TextSourceAttribution(
+              'OpenStreetMap contributors',
+              onTap: () => launchUrl(
+                Uri.parse(
+                  'https://openstreetmap.org/copyright',
+                ),
+              ), // (external)
+            ),
+            // Also add images...
+          ],
+        ),
+      ],
     );
   }
 }

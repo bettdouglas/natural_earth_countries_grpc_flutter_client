@@ -64,7 +64,7 @@ class Country {
 }
 
 @freezed
-class Result<T> with _$Result {
+class Result<T> with _$Result<T> {
   const factory Result.ok(T t) = _Ok;
   const factory Result.fail(Object error) = _Fail;
 }

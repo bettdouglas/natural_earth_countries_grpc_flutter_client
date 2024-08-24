@@ -1,44 +1,49 @@
-///
+//
 //  Generated code. Do not modify.
 //  source: kenya_wards.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
+
+// ignore_for_file: annotate_overrides, camel_case_types, comment_references
+// ignore_for_file: constant_identifier_names, library_prefixes
+// ignore_for_file: non_constant_identifier_names, prefer_final_fields
+// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'geometry.pb.dart' as $1;
+import 'geometry.pb.dart' as $2;
 
 class Level1Boundary extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Level1Boundary', createEmptyInstance: create)
-    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
-    ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'name')
-    ..aOM<$1.Geometry>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'boundary', subBuilder: $1.Geometry.create)
-    ..hasRequiredFields = false
-  ;
-
-  Level1Boundary._() : super();
   factory Level1Boundary({
     $core.String? id,
     $core.String? name,
-    $1.Geometry? boundary,
+    $2.Geometry? boundary,
   }) {
-    final _result = create();
+    final $result = create();
     if (id != null) {
-      _result.id = id;
+      $result.id = id;
     }
     if (name != null) {
-      _result.name = name;
+      $result.name = name;
     }
     if (boundary != null) {
-      _result.boundary = boundary;
+      $result.boundary = boundary;
     }
-    return _result;
+    return $result;
   }
+  Level1Boundary._() : super();
   factory Level1Boundary.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Level1Boundary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Level1Boundary', package: const $pb.PackageName(_omitMessageNames ? '' : 'countries'), createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'id')
+    ..aOS(2, _omitFieldNames ? '' : 'name')
+    ..aOM<$2.Geometry>(3, _omitFieldNames ? '' : 'boundary', subBuilder: $2.Geometry.create)
+    ..hasRequiredFields = false
+  ;
+
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
@@ -48,8 +53,10 @@ class Level1Boundary extends $pb.GeneratedMessage {
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  Level1Boundary copyWith(void Function(Level1Boundary) updates) => super.copyWith((message) => updates(message as Level1Boundary)) as Level1Boundary; // ignore: deprecated_member_use
+  Level1Boundary copyWith(void Function(Level1Boundary) updates) => super.copyWith((message) => updates(message as Level1Boundary)) as Level1Boundary;
+
   $pb.BuilderInfo get info_ => _i;
+
   @$core.pragma('dart2js:noInline')
   static Level1Boundary create() => Level1Boundary._();
   Level1Boundary createEmptyInstance() => create();
@@ -77,50 +84,51 @@ class Level1Boundary extends $pb.GeneratedMessage {
   void clearName() => clearField(2);
 
   @$pb.TagNumber(3)
-  $1.Geometry get boundary => $_getN(2);
+  $2.Geometry get boundary => $_getN(2);
   @$pb.TagNumber(3)
-  set boundary($1.Geometry v) { setField(3, v); }
+  set boundary($2.Geometry v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBoundary() => $_has(2);
   @$pb.TagNumber(3)
   void clearBoundary() => clearField(3);
   @$pb.TagNumber(3)
-  $1.Geometry ensureBoundary() => $_ensure(2);
+  $2.Geometry ensureBoundary() => $_ensure(2);
 }
 
 class Level2Boundary extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Level2Boundary', createEmptyInstance: create)
-    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
-    ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'name')
-    ..aOS(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'adm1name')
-    ..aOM<$1.Geometry>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'boundary', subBuilder: $1.Geometry.create)
-    ..hasRequiredFields = false
-  ;
-
-  Level2Boundary._() : super();
   factory Level2Boundary({
     $core.String? id,
     $core.String? name,
     $core.String? adm1name,
-    $1.Geometry? boundary,
+    $2.Geometry? boundary,
   }) {
-    final _result = create();
+    final $result = create();
     if (id != null) {
-      _result.id = id;
+      $result.id = id;
     }
     if (name != null) {
-      _result.name = name;
+      $result.name = name;
     }
     if (adm1name != null) {
-      _result.adm1name = adm1name;
+      $result.adm1name = adm1name;
     }
     if (boundary != null) {
-      _result.boundary = boundary;
+      $result.boundary = boundary;
     }
-    return _result;
+    return $result;
   }
+  Level2Boundary._() : super();
   factory Level2Boundary.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Level2Boundary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Level2Boundary', package: const $pb.PackageName(_omitMessageNames ? '' : 'countries'), createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'id')
+    ..aOS(2, _omitFieldNames ? '' : 'name')
+    ..aOS(3, _omitFieldNames ? '' : 'adm1name')
+    ..aOM<$2.Geometry>(4, _omitFieldNames ? '' : 'boundary', subBuilder: $2.Geometry.create)
+    ..hasRequiredFields = false
+  ;
+
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
@@ -130,8 +138,10 @@ class Level2Boundary extends $pb.GeneratedMessage {
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  Level2Boundary copyWith(void Function(Level2Boundary) updates) => super.copyWith((message) => updates(message as Level2Boundary)) as Level2Boundary; // ignore: deprecated_member_use
+  Level2Boundary copyWith(void Function(Level2Boundary) updates) => super.copyWith((message) => updates(message as Level2Boundary)) as Level2Boundary;
+
   $pb.BuilderInfo get info_ => _i;
+
   @$core.pragma('dart2js:noInline')
   static Level2Boundary create() => Level2Boundary._();
   Level2Boundary createEmptyInstance() => create();
@@ -168,35 +178,36 @@ class Level2Boundary extends $pb.GeneratedMessage {
   void clearAdm1name() => clearField(3);
 
   @$pb.TagNumber(4)
-  $1.Geometry get boundary => $_getN(3);
+  $2.Geometry get boundary => $_getN(3);
   @$pb.TagNumber(4)
-  set boundary($1.Geometry v) { setField(4, v); }
+  set boundary($2.Geometry v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasBoundary() => $_has(3);
   @$pb.TagNumber(4)
   void clearBoundary() => clearField(4);
   @$pb.TagNumber(4)
-  $1.Geometry ensureBoundary() => $_ensure(3);
+  $2.Geometry ensureBoundary() => $_ensure(3);
 }
 
 class BoundariesRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'BoundariesRequest', createEmptyInstance: create)
-    ..aOM<$1.Geometry>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'bounds', subBuilder: $1.Geometry.create)
+  factory BoundariesRequest({
+    $2.Geometry? bounds,
+  }) {
+    final $result = create();
+    if (bounds != null) {
+      $result.bounds = bounds;
+    }
+    return $result;
+  }
+  BoundariesRequest._() : super();
+  factory BoundariesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory BoundariesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BoundariesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'countries'), createEmptyInstance: create)
+    ..aOM<$2.Geometry>(1, _omitFieldNames ? '' : 'bounds', subBuilder: $2.Geometry.create)
     ..hasRequiredFields = false
   ;
 
-  BoundariesRequest._() : super();
-  factory BoundariesRequest({
-    $1.Geometry? bounds,
-  }) {
-    final _result = create();
-    if (bounds != null) {
-      _result.bounds = bounds;
-    }
-    return _result;
-  }
-  factory BoundariesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BoundariesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
@@ -206,8 +217,10 @@ class BoundariesRequest extends $pb.GeneratedMessage {
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  BoundariesRequest copyWith(void Function(BoundariesRequest) updates) => super.copyWith((message) => updates(message as BoundariesRequest)) as BoundariesRequest; // ignore: deprecated_member_use
+  BoundariesRequest copyWith(void Function(BoundariesRequest) updates) => super.copyWith((message) => updates(message as BoundariesRequest)) as BoundariesRequest;
+
   $pb.BuilderInfo get info_ => _i;
+
   @$core.pragma('dart2js:noInline')
   static BoundariesRequest create() => BoundariesRequest._();
   BoundariesRequest createEmptyInstance() => create();
@@ -217,35 +230,36 @@ class BoundariesRequest extends $pb.GeneratedMessage {
   static BoundariesRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $1.Geometry get bounds => $_getN(0);
+  $2.Geometry get bounds => $_getN(0);
   @$pb.TagNumber(1)
-  set bounds($1.Geometry v) { setField(1, v); }
+  set bounds($2.Geometry v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBounds() => $_has(0);
   @$pb.TagNumber(1)
   void clearBounds() => clearField(1);
   @$pb.TagNumber(1)
-  $1.Geometry ensureBounds() => $_ensure(0);
+  $2.Geometry ensureBounds() => $_ensure(0);
 }
 
 class Level1BoundariesResponse extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Level1BoundariesResponse', createEmptyInstance: create)
-    ..pc<Level1Boundary>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'boundaries', $pb.PbFieldType.PM, subBuilder: Level1Boundary.create)
-    ..hasRequiredFields = false
-  ;
-
-  Level1BoundariesResponse._() : super();
   factory Level1BoundariesResponse({
     $core.Iterable<Level1Boundary>? boundaries,
   }) {
-    final _result = create();
+    final $result = create();
     if (boundaries != null) {
-      _result.boundaries.addAll(boundaries);
+      $result.boundaries.addAll(boundaries);
     }
-    return _result;
+    return $result;
   }
+  Level1BoundariesResponse._() : super();
   factory Level1BoundariesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Level1BoundariesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Level1BoundariesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'countries'), createEmptyInstance: create)
+    ..pc<Level1Boundary>(1, _omitFieldNames ? '' : 'boundaries', $pb.PbFieldType.PM, subBuilder: Level1Boundary.create)
+    ..hasRequiredFields = false
+  ;
+
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
@@ -255,8 +269,10 @@ class Level1BoundariesResponse extends $pb.GeneratedMessage {
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  Level1BoundariesResponse copyWith(void Function(Level1BoundariesResponse) updates) => super.copyWith((message) => updates(message as Level1BoundariesResponse)) as Level1BoundariesResponse; // ignore: deprecated_member_use
+  Level1BoundariesResponse copyWith(void Function(Level1BoundariesResponse) updates) => super.copyWith((message) => updates(message as Level1BoundariesResponse)) as Level1BoundariesResponse;
+
   $pb.BuilderInfo get info_ => _i;
+
   @$core.pragma('dart2js:noInline')
   static Level1BoundariesResponse create() => Level1BoundariesResponse._();
   Level1BoundariesResponse createEmptyInstance() => create();
@@ -270,23 +286,24 @@ class Level1BoundariesResponse extends $pb.GeneratedMessage {
 }
 
 class Level2BoundariesResponse extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Level2BoundariesResponse', createEmptyInstance: create)
-    ..pc<Level2Boundary>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'boundaries', $pb.PbFieldType.PM, subBuilder: Level2Boundary.create)
-    ..hasRequiredFields = false
-  ;
-
-  Level2BoundariesResponse._() : super();
   factory Level2BoundariesResponse({
     $core.Iterable<Level2Boundary>? boundaries,
   }) {
-    final _result = create();
+    final $result = create();
     if (boundaries != null) {
-      _result.boundaries.addAll(boundaries);
+      $result.boundaries.addAll(boundaries);
     }
-    return _result;
+    return $result;
   }
+  Level2BoundariesResponse._() : super();
   factory Level2BoundariesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Level2BoundariesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Level2BoundariesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'countries'), createEmptyInstance: create)
+    ..pc<Level2Boundary>(1, _omitFieldNames ? '' : 'boundaries', $pb.PbFieldType.PM, subBuilder: Level2Boundary.create)
+    ..hasRequiredFields = false
+  ;
+
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
@@ -296,8 +313,10 @@ class Level2BoundariesResponse extends $pb.GeneratedMessage {
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  Level2BoundariesResponse copyWith(void Function(Level2BoundariesResponse) updates) => super.copyWith((message) => updates(message as Level2BoundariesResponse)) as Level2BoundariesResponse; // ignore: deprecated_member_use
+  Level2BoundariesResponse copyWith(void Function(Level2BoundariesResponse) updates) => super.copyWith((message) => updates(message as Level2BoundariesResponse)) as Level2BoundariesResponse;
+
   $pb.BuilderInfo get info_ => _i;
+
   @$core.pragma('dart2js:noInline')
   static Level2BoundariesResponse create() => Level2BoundariesResponse._();
   Level2BoundariesResponse createEmptyInstance() => create();
@@ -310,199 +329,6 @@ class Level2BoundariesResponse extends $pb.GeneratedMessage {
   $core.List<Level2Boundary> get boundaries => $_getList(0);
 }
 
-class StreamL1GeometriesRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'StreamL1GeometriesRequest', createEmptyInstance: create)
-    ..pPS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'ids')
-    ..aOM<$1.Geometry>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'bounds', subBuilder: $1.Geometry.create)
-    ..hasRequiredFields = false
-  ;
 
-  StreamL1GeometriesRequest._() : super();
-  factory StreamL1GeometriesRequest({
-    $core.Iterable<$core.String>? ids,
-    $1.Geometry? bounds,
-  }) {
-    final _result = create();
-    if (ids != null) {
-      _result.ids.addAll(ids);
-    }
-    if (bounds != null) {
-      _result.bounds = bounds;
-    }
-    return _result;
-  }
-  factory StreamL1GeometriesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StreamL1GeometriesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StreamL1GeometriesRequest clone() => StreamL1GeometriesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StreamL1GeometriesRequest copyWith(void Function(StreamL1GeometriesRequest) updates) => super.copyWith((message) => updates(message as StreamL1GeometriesRequest)) as StreamL1GeometriesRequest; // ignore: deprecated_member_use
-  $pb.BuilderInfo get info_ => _i;
-  @$core.pragma('dart2js:noInline')
-  static StreamL1GeometriesRequest create() => StreamL1GeometriesRequest._();
-  StreamL1GeometriesRequest createEmptyInstance() => create();
-  static $pb.PbList<StreamL1GeometriesRequest> createRepeated() => $pb.PbList<StreamL1GeometriesRequest>();
-  @$core.pragma('dart2js:noInline')
-  static StreamL1GeometriesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StreamL1GeometriesRequest>(create);
-  static StreamL1GeometriesRequest? _defaultInstance;
-
-  @$pb.TagNumber(1)
-  $core.List<$core.String> get ids => $_getList(0);
-
-  @$pb.TagNumber(2)
-  $1.Geometry get bounds => $_getN(1);
-  @$pb.TagNumber(2)
-  set bounds($1.Geometry v) { setField(2, v); }
-  @$pb.TagNumber(2)
-  $core.bool hasBounds() => $_has(1);
-  @$pb.TagNumber(2)
-  void clearBounds() => clearField(2);
-  @$pb.TagNumber(2)
-  $1.Geometry ensureBounds() => $_ensure(1);
-}
-
-class StreamL1GeometriesResponse extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'StreamL1GeometriesResponse', createEmptyInstance: create)
-    ..pc<Level1Boundary>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'boundaries', $pb.PbFieldType.PM, subBuilder: Level1Boundary.create)
-    ..hasRequiredFields = false
-  ;
-
-  StreamL1GeometriesResponse._() : super();
-  factory StreamL1GeometriesResponse({
-    $core.Iterable<Level1Boundary>? boundaries,
-  }) {
-    final _result = create();
-    if (boundaries != null) {
-      _result.boundaries.addAll(boundaries);
-    }
-    return _result;
-  }
-  factory StreamL1GeometriesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StreamL1GeometriesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StreamL1GeometriesResponse clone() => StreamL1GeometriesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StreamL1GeometriesResponse copyWith(void Function(StreamL1GeometriesResponse) updates) => super.copyWith((message) => updates(message as StreamL1GeometriesResponse)) as StreamL1GeometriesResponse; // ignore: deprecated_member_use
-  $pb.BuilderInfo get info_ => _i;
-  @$core.pragma('dart2js:noInline')
-  static StreamL1GeometriesResponse create() => StreamL1GeometriesResponse._();
-  StreamL1GeometriesResponse createEmptyInstance() => create();
-  static $pb.PbList<StreamL1GeometriesResponse> createRepeated() => $pb.PbList<StreamL1GeometriesResponse>();
-  @$core.pragma('dart2js:noInline')
-  static StreamL1GeometriesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StreamL1GeometriesResponse>(create);
-  static StreamL1GeometriesResponse? _defaultInstance;
-
-  @$pb.TagNumber(1)
-  $core.List<Level1Boundary> get boundaries => $_getList(0);
-}
-
-class StreamL2GeometriesRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'StreamL2GeometriesRequest', createEmptyInstance: create)
-    ..pPS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'ids')
-    ..aOM<$1.Geometry>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'bounds', subBuilder: $1.Geometry.create)
-    ..hasRequiredFields = false
-  ;
-
-  StreamL2GeometriesRequest._() : super();
-  factory StreamL2GeometriesRequest({
-    $core.Iterable<$core.String>? ids,
-    $1.Geometry? bounds,
-  }) {
-    final _result = create();
-    if (ids != null) {
-      _result.ids.addAll(ids);
-    }
-    if (bounds != null) {
-      _result.bounds = bounds;
-    }
-    return _result;
-  }
-  factory StreamL2GeometriesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StreamL2GeometriesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StreamL2GeometriesRequest clone() => StreamL2GeometriesRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StreamL2GeometriesRequest copyWith(void Function(StreamL2GeometriesRequest) updates) => super.copyWith((message) => updates(message as StreamL2GeometriesRequest)) as StreamL2GeometriesRequest; // ignore: deprecated_member_use
-  $pb.BuilderInfo get info_ => _i;
-  @$core.pragma('dart2js:noInline')
-  static StreamL2GeometriesRequest create() => StreamL2GeometriesRequest._();
-  StreamL2GeometriesRequest createEmptyInstance() => create();
-  static $pb.PbList<StreamL2GeometriesRequest> createRepeated() => $pb.PbList<StreamL2GeometriesRequest>();
-  @$core.pragma('dart2js:noInline')
-  static StreamL2GeometriesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StreamL2GeometriesRequest>(create);
-  static StreamL2GeometriesRequest? _defaultInstance;
-
-  @$pb.TagNumber(1)
-  $core.List<$core.String> get ids => $_getList(0);
-
-  @$pb.TagNumber(2)
-  $1.Geometry get bounds => $_getN(1);
-  @$pb.TagNumber(2)
-  set bounds($1.Geometry v) { setField(2, v); }
-  @$pb.TagNumber(2)
-  $core.bool hasBounds() => $_has(1);
-  @$pb.TagNumber(2)
-  void clearBounds() => clearField(2);
-  @$pb.TagNumber(2)
-  $1.Geometry ensureBounds() => $_ensure(1);
-}
-
-class StreamL2GeometriesResponse extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'StreamL2GeometriesResponse', createEmptyInstance: create)
-    ..pc<Level1Boundary>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'boundaries', $pb.PbFieldType.PM, subBuilder: Level1Boundary.create)
-    ..hasRequiredFields = false
-  ;
-
-  StreamL2GeometriesResponse._() : super();
-  factory StreamL2GeometriesResponse({
-    $core.Iterable<Level1Boundary>? boundaries,
-  }) {
-    final _result = create();
-    if (boundaries != null) {
-      _result.boundaries.addAll(boundaries);
-    }
-    return _result;
-  }
-  factory StreamL2GeometriesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StreamL2GeometriesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StreamL2GeometriesResponse clone() => StreamL2GeometriesResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StreamL2GeometriesResponse copyWith(void Function(StreamL2GeometriesResponse) updates) => super.copyWith((message) => updates(message as StreamL2GeometriesResponse)) as StreamL2GeometriesResponse; // ignore: deprecated_member_use
-  $pb.BuilderInfo get info_ => _i;
-  @$core.pragma('dart2js:noInline')
-  static StreamL2GeometriesResponse create() => StreamL2GeometriesResponse._();
-  StreamL2GeometriesResponse createEmptyInstance() => create();
-  static $pb.PbList<StreamL2GeometriesResponse> createRepeated() => $pb.PbList<StreamL2GeometriesResponse>();
-  @$core.pragma('dart2js:noInline')
-  static StreamL2GeometriesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StreamL2GeometriesResponse>(create);
-  static StreamL2GeometriesResponse? _defaultInstance;
-
-  @$pb.TagNumber(1)
-  $core.List<Level1Boundary> get boundaries => $_getList(0);
-}
-
+const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
+const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');

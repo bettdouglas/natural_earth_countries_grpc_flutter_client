@@ -7,10 +7,10 @@ import 'package:ne_countries_grpc/countries/bloc/gen/kenya_wards.pbgrpc.dart';
 import 'package:ne_countries_grpc/countries/bloc/jts_pb_serializers/serializers.dart';
 import 'package:rxdart/rxdart.dart';
 
-part 'counties_event.dart';
-part 'counties_state.dart';
-part 'counties_repository.dart';
 part 'counties_bloc.freezed.dart';
+part 'counties_event.dart';
+part 'counties_repository.dart';
+part 'counties_state.dart';
 
 class CountiesBloc extends Bloc<CountiesEvent, CountiesState> {
   CountiesBloc({
@@ -63,7 +63,7 @@ class CountiesBloc extends Bloc<CountiesEvent, CountiesState> {
   }
 
   late StreamController<CountyBoundaryChanged> _streamController;
-  late StreamSubscription _countiesStreamSubscription;
+  late StreamSubscription<List<County>> _countiesStreamSubscription;
   final CountiesRepository countiesRepository;
 
   @override

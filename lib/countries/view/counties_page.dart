@@ -1,17 +1,16 @@
+import 'package:build_context/build_context.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
-
 import 'package:ne_countries_grpc/counties/bloc/counties_bloc.dart';
 import 'package:ne_countries_grpc/countries/view/base_map.dart';
-
-import 'jts_2_fm_plotting_extensions.dart';
+import 'package:ne_countries_grpc/countries/view/jts_2_fm_plotting_extensions.dart';
 
 class CountiesPage extends StatefulWidget {
   const CountiesPage({
-    Key? key,
     required this.center,
+    Key? key,
   }) : super(key: key);
 
   final LatLng center;
@@ -50,13 +49,14 @@ class _CountiesPageState extends State<CountiesPage> {
                   zoom: 12,
                   onBoundsChanged: onBoundsChanged,
                   center: center ?? widget.center,
-                  polygonLayerOptionsList: (counties ?? [])
+                  polygonLayers: (counties ?? [])
                       .map(
-                        (e) => PolygonLayerOptions(
+                        (e) => PolygonLayer(
                           polygons: e.plot(
                             borderColor: Colors.red,
                             color: Colors.blueAccent,
-                            borderStrokeWidth: 1.0,
+                            borderStrokeWidth: 1,
+                            labelStyle: context.bodyText1!,
                           ),
                         ),
                       )
@@ -69,13 +69,14 @@ class _CountiesPageState extends State<CountiesPage> {
               zoom: 12,
               onBoundsChanged: onBoundsChanged,
               center: center ?? widget.center,
-              polygonLayerOptionsList: counties
+              polygonLayers: counties
                   .map(
-                    (e) => PolygonLayerOptions(
+                    (e) => PolygonLayer(
                       polygons: e.plot(
                         borderColor: Colors.red,
                         color: Colors.blueAccent,
-                        borderStrokeWidth: 1.0,
+                        borderStrokeWidth: 1,
+                        labelStyle: context.bodyText1!,
                       ),
                     ),
                   )
@@ -94,6 +95,7 @@ extension PlotCountry on County {
     required Color borderColor,
     required Color color,
     required double borderStrokeWidth,
+    required TextStyle labelStyle,
   }) {
     return geom.when(
       polygon: (p) => [
@@ -101,12 +103,16 @@ extension PlotCountry on County {
           borderColor: borderColor,
           color: color,
           borderStrokeWidth: borderStrokeWidth,
+          label: name,
+          labelStyle: labelStyle,
         ),
       ],
       multi: (m) => m.plot(
         borderColor: borderColor,
         color: color,
         borderStrokeWidth: borderStrokeWidth,
+        label: name,
+        labelStyle: labelStyle,
       ),
     );
   }

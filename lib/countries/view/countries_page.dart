@@ -1,3 +1,4 @@
+import 'package:build_context/build_context.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_map/flutter_map.dart';
@@ -13,8 +14,8 @@ import 'package:ne_countries_grpc/filter_mode/view/toggle_view_widget.dart';
 
 class CountriesPage extends StatelessWidget {
   const CountriesPage({
-    Key? key,
     required this.filterModeState,
+    Key? key,
   }) : super(key: key);
 
   final FilterModeState filterModeState;
@@ -39,29 +40,30 @@ class CountriesPage extends StatelessWidget {
           return Column(
             children: [
               const Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(8),
                 child: PerFilterActions(),
               ),
               Expanded(
                 child: state.when(
-                  initial: () => BaseMap(center: LatLng(-1.0, 32.5)),
-                  loading: (msg) => Stack(
+                  initial: () => const BaseMap(center: LatLng(-1, 32.5)),
+                  loading: (msg) => const Stack(
                     children: [
-                      BaseMap(center: LatLng(-1.0, 32.5)),
-                      const Center(child: CircularProgressIndicator()),
+                      BaseMap(center: LatLng(-1, 32.5)),
+                      Center(child: CircularProgressIndicator()),
                     ],
                   ),
                   updating: (countries, msg) => Stack(
                     children: [
                       BaseMap(
-                        center: LatLng(-1.0, 32.5),
-                        polygonLayerOptionsList: countries
+                        center: const LatLng(-1, 32.5),
+                        polygonLayers: countries
                             .map(
-                              (e) => PolygonLayerOptions(
+                              (e) => PolygonLayer(
                                 polygons: e.plot(
                                   borderColor: Colors.red,
                                   color: Colors.blueAccent,
-                                  borderStrokeWidth: 1.0,
+                                  borderStrokeWidth: 1,
+                                  labelStyle: context.bodyText1!,
                                 ),
                               ),
                             )
@@ -75,12 +77,13 @@ class CountriesPage extends StatelessWidget {
                         },
                       ),
                       Center(
-                          child: Column(
-                        children: [
-                          const CircularProgressIndicator(),
-                          Text(msg),
-                        ],
-                      )),
+                        child: Column(
+                          children: [
+                            const CircularProgressIndicator(),
+                            Text(msg),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                   loaded: (countries) => BaseMap(
@@ -93,14 +96,15 @@ class CountriesPage extends StatelessWidget {
                         context,
                       ),
                     ),
-                    center: LatLng(-1.0, 32.5),
-                    polygonLayerOptionsList: countries
+                    center: const LatLng(-1, 32.5),
+                    polygonLayers: countries
                         .map(
-                          (e) => PolygonLayerOptions(
+                          (e) => PolygonLayer(
                             polygons: e.plot(
                               borderColor: Colors.red,
                               color: Colors.blueAccent,
-                              borderStrokeWidth: 1.0,
+                              borderStrokeWidth: 1,
+                              labelStyle: context.bodyText1!,
                             ),
                           ),
                         )
@@ -108,7 +112,7 @@ class CountriesPage extends StatelessWidget {
                   ),
                   error: (err) => Stack(
                     children: [
-                      BaseMap(center: LatLng(-1.0, 32.5)),
+                      const BaseMap(center: LatLng(-1, 32.5)),
                       Center(child: Card(child: Text(err.toString()))),
                     ],
                   ),
@@ -184,6 +188,7 @@ extension PlotCountry on Country {
     required Color borderColor,
     required Color color,
     required double borderStrokeWidth,
+    required TextStyle labelStyle,
   }) {
     return boundary.when(
       polygon: (p) => [
@@ -191,12 +196,16 @@ extension PlotCountry on Country {
           borderColor: borderColor,
           color: color,
           borderStrokeWidth: borderStrokeWidth,
+          label: name,
+          labelStyle: labelStyle,
         ),
       ],
       multi: (m) => m.plot(
         borderColor: borderColor,
         color: color,
         borderStrokeWidth: borderStrokeWidth,
+        label: name,
+        labelStyle: labelStyle,
       ),
     );
   }

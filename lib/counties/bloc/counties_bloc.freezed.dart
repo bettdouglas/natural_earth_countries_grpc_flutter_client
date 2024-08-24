@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'counties_bloc.dart';
 
@@ -11,31 +12,7 @@ part of 'counties_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$CountiesEventTearOff {
-  const _$CountiesEventTearOff();
-
-  _Started started() {
-    return const _Started();
-  }
-
-  _BoundaryChanged boundaryChanged(Envelope envelope) {
-    return _BoundaryChanged(
-      envelope,
-    );
-  }
-
-  _CountiesUpdated countiesUpdated(List<County> counties) {
-    return _CountiesUpdated(
-      counties,
-    );
-  }
-}
-
-/// @nodoc
-const $CountiesEvent = _$CountiesEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$CountiesEvent {
@@ -48,9 +25,9 @@ mixin _$CountiesEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(Envelope envelope)? boundaryChanged,
-    TResult Function(List<County> counties)? countiesUpdated,
+    TResult? Function()? started,
+    TResult? Function(Envelope envelope)? boundaryChanged,
+    TResult? Function(List<County> counties)? countiesUpdated,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -70,9 +47,9 @@ mixin _$CountiesEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_BoundaryChanged value)? boundaryChanged,
-    TResult Function(_CountiesUpdated value)? countiesUpdated,
+    TResult? Function(_Started value)? started,
+    TResult? Function(_BoundaryChanged value)? boundaryChanged,
+    TResult? Function(_CountiesUpdated value)? countiesUpdated,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -89,39 +66,40 @@ mixin _$CountiesEvent {
 abstract class $CountiesEventCopyWith<$Res> {
   factory $CountiesEventCopyWith(
           CountiesEvent value, $Res Function(CountiesEvent) then) =
-      _$CountiesEventCopyWithImpl<$Res>;
+      _$CountiesEventCopyWithImpl<$Res, CountiesEvent>;
 }
 
 /// @nodoc
-class _$CountiesEventCopyWithImpl<$Res>
+class _$CountiesEventCopyWithImpl<$Res, $Val extends CountiesEvent>
     implements $CountiesEventCopyWith<$Res> {
   _$CountiesEventCopyWithImpl(this._value, this._then);
 
-  final CountiesEvent _value;
   // ignore: unused_field
-  final $Res Function(CountiesEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$StartedCopyWith<$Res> {
-  factory _$StartedCopyWith(_Started value, $Res Function(_Started) then) =
-      __$StartedCopyWithImpl<$Res>;
+abstract class _$$StartedImplCopyWith<$Res> {
+  factory _$$StartedImplCopyWith(
+          _$StartedImpl value, $Res Function(_$StartedImpl) then) =
+      __$$StartedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$StartedCopyWithImpl<$Res> extends _$CountiesEventCopyWithImpl<$Res>
-    implements _$StartedCopyWith<$Res> {
-  __$StartedCopyWithImpl(_Started _value, $Res Function(_Started) _then)
-      : super(_value, (v) => _then(v as _Started));
-
-  @override
-  _Started get _value => super._value as _Started;
+class __$$StartedImplCopyWithImpl<$Res>
+    extends _$CountiesEventCopyWithImpl<$Res, _$StartedImpl>
+    implements _$$StartedImplCopyWith<$Res> {
+  __$$StartedImplCopyWithImpl(
+      _$StartedImpl _value, $Res Function(_$StartedImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Started implements _Started {
-  const _$_Started();
+class _$StartedImpl implements _Started {
+  const _$StartedImpl();
 
   @override
   String toString() {
@@ -129,8 +107,9 @@ class _$_Started implements _Started {
   }
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _Started);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$StartedImpl);
   }
 
   @override
@@ -149,9 +128,9 @@ class _$_Started implements _Started {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(Envelope envelope)? boundaryChanged,
-    TResult Function(List<County> counties)? countiesUpdated,
+    TResult? Function()? started,
+    TResult? Function(Envelope envelope)? boundaryChanged,
+    TResult? Function(List<County> counties)? countiesUpdated,
   }) {
     return started?.call();
   }
@@ -183,9 +162,9 @@ class _$_Started implements _Started {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_BoundaryChanged value)? boundaryChanged,
-    TResult Function(_CountiesUpdated value)? countiesUpdated,
+    TResult? Function(_Started value)? started,
+    TResult? Function(_BoundaryChanged value)? boundaryChanged,
+    TResult? Function(_CountiesUpdated value)? countiesUpdated,
   }) {
     return started?.call(this);
   }
@@ -206,34 +185,33 @@ class _$_Started implements _Started {
 }
 
 abstract class _Started implements CountiesEvent {
-  const factory _Started() = _$_Started;
+  const factory _Started() = _$StartedImpl;
 }
 
 /// @nodoc
-abstract class _$BoundaryChangedCopyWith<$Res> {
-  factory _$BoundaryChangedCopyWith(
-          _BoundaryChanged value, $Res Function(_BoundaryChanged) then) =
-      __$BoundaryChangedCopyWithImpl<$Res>;
+abstract class _$$BoundaryChangedImplCopyWith<$Res> {
+  factory _$$BoundaryChangedImplCopyWith(_$BoundaryChangedImpl value,
+          $Res Function(_$BoundaryChangedImpl) then) =
+      __$$BoundaryChangedImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({Envelope envelope});
 }
 
 /// @nodoc
-class __$BoundaryChangedCopyWithImpl<$Res>
-    extends _$CountiesEventCopyWithImpl<$Res>
-    implements _$BoundaryChangedCopyWith<$Res> {
-  __$BoundaryChangedCopyWithImpl(
-      _BoundaryChanged _value, $Res Function(_BoundaryChanged) _then)
-      : super(_value, (v) => _then(v as _BoundaryChanged));
+class __$$BoundaryChangedImplCopyWithImpl<$Res>
+    extends _$CountiesEventCopyWithImpl<$Res, _$BoundaryChangedImpl>
+    implements _$$BoundaryChangedImplCopyWith<$Res> {
+  __$$BoundaryChangedImplCopyWithImpl(
+      _$BoundaryChangedImpl _value, $Res Function(_$BoundaryChangedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _BoundaryChanged get _value => super._value as _BoundaryChanged;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? envelope = freezed,
+    Object? envelope = null,
   }) {
-    return _then(_BoundaryChanged(
-      envelope == freezed
+    return _then(_$BoundaryChangedImpl(
+      null == envelope
           ? _value.envelope
           : envelope // ignore: cast_nullable_to_non_nullable
               as Envelope,
@@ -243,8 +221,8 @@ class __$BoundaryChangedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_BoundaryChanged implements _BoundaryChanged {
-  const _$_BoundaryChanged(this.envelope);
+class _$BoundaryChangedImpl implements _BoundaryChanged {
+  const _$BoundaryChangedImpl(this.envelope);
 
   @override
   final Envelope envelope;
@@ -255,22 +233,23 @@ class _$_BoundaryChanged implements _BoundaryChanged {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _BoundaryChanged &&
+        (other.runtimeType == runtimeType &&
+            other is _$BoundaryChangedImpl &&
             (identical(other.envelope, envelope) ||
-                const DeepCollectionEquality()
-                    .equals(other.envelope, envelope)));
+                other.envelope == envelope));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(envelope);
+  int get hashCode => Object.hash(runtimeType, envelope);
 
   @JsonKey(ignore: true)
   @override
-  _$BoundaryChangedCopyWith<_BoundaryChanged> get copyWith =>
-      __$BoundaryChangedCopyWithImpl<_BoundaryChanged>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$BoundaryChangedImplCopyWith<_$BoundaryChangedImpl> get copyWith =>
+      __$$BoundaryChangedImplCopyWithImpl<_$BoundaryChangedImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -285,9 +264,9 @@ class _$_BoundaryChanged implements _BoundaryChanged {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(Envelope envelope)? boundaryChanged,
-    TResult Function(List<County> counties)? countiesUpdated,
+    TResult? Function()? started,
+    TResult? Function(Envelope envelope)? boundaryChanged,
+    TResult? Function(List<County> counties)? countiesUpdated,
   }) {
     return boundaryChanged?.call(envelope);
   }
@@ -319,9 +298,9 @@ class _$_BoundaryChanged implements _BoundaryChanged {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_BoundaryChanged value)? boundaryChanged,
-    TResult Function(_CountiesUpdated value)? countiesUpdated,
+    TResult? Function(_Started value)? started,
+    TResult? Function(_BoundaryChanged value)? boundaryChanged,
+    TResult? Function(_CountiesUpdated value)? countiesUpdated,
   }) {
     return boundaryChanged?.call(this);
   }
@@ -342,40 +321,40 @@ class _$_BoundaryChanged implements _BoundaryChanged {
 }
 
 abstract class _BoundaryChanged implements CountiesEvent {
-  const factory _BoundaryChanged(Envelope envelope) = _$_BoundaryChanged;
+  const factory _BoundaryChanged(final Envelope envelope) =
+      _$BoundaryChangedImpl;
 
-  Envelope get envelope => throw _privateConstructorUsedError;
+  Envelope get envelope;
   @JsonKey(ignore: true)
-  _$BoundaryChangedCopyWith<_BoundaryChanged> get copyWith =>
+  _$$BoundaryChangedImplCopyWith<_$BoundaryChangedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$CountiesUpdatedCopyWith<$Res> {
-  factory _$CountiesUpdatedCopyWith(
-          _CountiesUpdated value, $Res Function(_CountiesUpdated) then) =
-      __$CountiesUpdatedCopyWithImpl<$Res>;
+abstract class _$$CountiesUpdatedImplCopyWith<$Res> {
+  factory _$$CountiesUpdatedImplCopyWith(_$CountiesUpdatedImpl value,
+          $Res Function(_$CountiesUpdatedImpl) then) =
+      __$$CountiesUpdatedImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({List<County> counties});
 }
 
 /// @nodoc
-class __$CountiesUpdatedCopyWithImpl<$Res>
-    extends _$CountiesEventCopyWithImpl<$Res>
-    implements _$CountiesUpdatedCopyWith<$Res> {
-  __$CountiesUpdatedCopyWithImpl(
-      _CountiesUpdated _value, $Res Function(_CountiesUpdated) _then)
-      : super(_value, (v) => _then(v as _CountiesUpdated));
+class __$$CountiesUpdatedImplCopyWithImpl<$Res>
+    extends _$CountiesEventCopyWithImpl<$Res, _$CountiesUpdatedImpl>
+    implements _$$CountiesUpdatedImplCopyWith<$Res> {
+  __$$CountiesUpdatedImplCopyWithImpl(
+      _$CountiesUpdatedImpl _value, $Res Function(_$CountiesUpdatedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _CountiesUpdated get _value => super._value as _CountiesUpdated;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? counties = freezed,
+    Object? counties = null,
   }) {
-    return _then(_CountiesUpdated(
-      counties == freezed
-          ? _value.counties
+    return _then(_$CountiesUpdatedImpl(
+      null == counties
+          ? _value._counties
           : counties // ignore: cast_nullable_to_non_nullable
               as List<County>,
     ));
@@ -384,11 +363,17 @@ class __$CountiesUpdatedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_CountiesUpdated implements _CountiesUpdated {
-  const _$_CountiesUpdated(this.counties);
+class _$CountiesUpdatedImpl implements _CountiesUpdated {
+  const _$CountiesUpdatedImpl(final List<County> counties)
+      : _counties = counties;
 
+  final List<County> _counties;
   @override
-  final List<County> counties;
+  List<County> get counties {
+    if (_counties is EqualUnmodifiableListView) return _counties;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_counties);
+  }
 
   @override
   String toString() {
@@ -396,22 +381,23 @@ class _$_CountiesUpdated implements _CountiesUpdated {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _CountiesUpdated &&
-            (identical(other.counties, counties) ||
-                const DeepCollectionEquality()
-                    .equals(other.counties, counties)));
+        (other.runtimeType == runtimeType &&
+            other is _$CountiesUpdatedImpl &&
+            const DeepCollectionEquality().equals(other._counties, _counties));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(counties);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_counties));
 
   @JsonKey(ignore: true)
   @override
-  _$CountiesUpdatedCopyWith<_CountiesUpdated> get copyWith =>
-      __$CountiesUpdatedCopyWithImpl<_CountiesUpdated>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$CountiesUpdatedImplCopyWith<_$CountiesUpdatedImpl> get copyWith =>
+      __$$CountiesUpdatedImplCopyWithImpl<_$CountiesUpdatedImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -426,9 +412,9 @@ class _$_CountiesUpdated implements _CountiesUpdated {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(Envelope envelope)? boundaryChanged,
-    TResult Function(List<County> counties)? countiesUpdated,
+    TResult? Function()? started,
+    TResult? Function(Envelope envelope)? boundaryChanged,
+    TResult? Function(List<County> counties)? countiesUpdated,
   }) {
     return countiesUpdated?.call(counties);
   }
@@ -460,9 +446,9 @@ class _$_CountiesUpdated implements _CountiesUpdated {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_BoundaryChanged value)? boundaryChanged,
-    TResult Function(_CountiesUpdated value)? countiesUpdated,
+    TResult? Function(_Started value)? started,
+    TResult? Function(_BoundaryChanged value)? boundaryChanged,
+    TResult? Function(_CountiesUpdated value)? countiesUpdated,
   }) {
     return countiesUpdated?.call(this);
   }
@@ -483,29 +469,14 @@ class _$_CountiesUpdated implements _CountiesUpdated {
 }
 
 abstract class _CountiesUpdated implements CountiesEvent {
-  const factory _CountiesUpdated(List<County> counties) = _$_CountiesUpdated;
+  const factory _CountiesUpdated(final List<County> counties) =
+      _$CountiesUpdatedImpl;
 
-  List<County> get counties => throw _privateConstructorUsedError;
+  List<County> get counties;
   @JsonKey(ignore: true)
-  _$CountiesUpdatedCopyWith<_CountiesUpdated> get copyWith =>
+  _$$CountiesUpdatedImplCopyWith<_$CountiesUpdatedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$CountyBoundaryChangedTearOff {
-  const _$CountyBoundaryChangedTearOff();
-
-  _CountyBoundaryChanged call(
-      {required Polygon bounds, required List<String> ids}) {
-    return _CountyBoundaryChanged(
-      bounds: bounds,
-      ids: ids,
-    );
-  }
-}
-
-/// @nodoc
-const $CountyBoundaryChanged = _$CountyBoundaryChangedTearOff();
 
 /// @nodoc
 mixin _$CountyBoundaryChanged {
@@ -521,70 +492,75 @@ mixin _$CountyBoundaryChanged {
 abstract class $CountyBoundaryChangedCopyWith<$Res> {
   factory $CountyBoundaryChangedCopyWith(CountyBoundaryChanged value,
           $Res Function(CountyBoundaryChanged) then) =
-      _$CountyBoundaryChangedCopyWithImpl<$Res>;
+      _$CountyBoundaryChangedCopyWithImpl<$Res, CountyBoundaryChanged>;
+  @useResult
   $Res call({Polygon bounds, List<String> ids});
 }
 
 /// @nodoc
-class _$CountyBoundaryChangedCopyWithImpl<$Res>
+class _$CountyBoundaryChangedCopyWithImpl<$Res,
+        $Val extends CountyBoundaryChanged>
     implements $CountyBoundaryChangedCopyWith<$Res> {
   _$CountyBoundaryChangedCopyWithImpl(this._value, this._then);
 
-  final CountyBoundaryChanged _value;
   // ignore: unused_field
-  final $Res Function(CountyBoundaryChanged) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? bounds = freezed,
-    Object? ids = freezed,
+    Object? bounds = null,
+    Object? ids = null,
   }) {
     return _then(_value.copyWith(
-      bounds: bounds == freezed
+      bounds: null == bounds
           ? _value.bounds
           : bounds // ignore: cast_nullable_to_non_nullable
               as Polygon,
-      ids: ids == freezed
+      ids: null == ids
           ? _value.ids
           : ids // ignore: cast_nullable_to_non_nullable
               as List<String>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$CountyBoundaryChangedCopyWith<$Res>
+abstract class _$$CountyBoundaryChangedImplCopyWith<$Res>
     implements $CountyBoundaryChangedCopyWith<$Res> {
-  factory _$CountyBoundaryChangedCopyWith(_CountyBoundaryChanged value,
-          $Res Function(_CountyBoundaryChanged) then) =
-      __$CountyBoundaryChangedCopyWithImpl<$Res>;
+  factory _$$CountyBoundaryChangedImplCopyWith(
+          _$CountyBoundaryChangedImpl value,
+          $Res Function(_$CountyBoundaryChangedImpl) then) =
+      __$$CountyBoundaryChangedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({Polygon bounds, List<String> ids});
 }
 
 /// @nodoc
-class __$CountyBoundaryChangedCopyWithImpl<$Res>
-    extends _$CountyBoundaryChangedCopyWithImpl<$Res>
-    implements _$CountyBoundaryChangedCopyWith<$Res> {
-  __$CountyBoundaryChangedCopyWithImpl(_CountyBoundaryChanged _value,
-      $Res Function(_CountyBoundaryChanged) _then)
-      : super(_value, (v) => _then(v as _CountyBoundaryChanged));
+class __$$CountyBoundaryChangedImplCopyWithImpl<$Res>
+    extends _$CountyBoundaryChangedCopyWithImpl<$Res,
+        _$CountyBoundaryChangedImpl>
+    implements _$$CountyBoundaryChangedImplCopyWith<$Res> {
+  __$$CountyBoundaryChangedImplCopyWithImpl(_$CountyBoundaryChangedImpl _value,
+      $Res Function(_$CountyBoundaryChangedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _CountyBoundaryChanged get _value => super._value as _CountyBoundaryChanged;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? bounds = freezed,
-    Object? ids = freezed,
+    Object? bounds = null,
+    Object? ids = null,
   }) {
-    return _then(_CountyBoundaryChanged(
-      bounds: bounds == freezed
+    return _then(_$CountyBoundaryChangedImpl(
+      bounds: null == bounds
           ? _value.bounds
           : bounds // ignore: cast_nullable_to_non_nullable
               as Polygon,
-      ids: ids == freezed
-          ? _value.ids
+      ids: null == ids
+          ? _value._ids
           : ids // ignore: cast_nullable_to_non_nullable
               as List<String>,
     ));
@@ -593,13 +569,20 @@ class __$CountyBoundaryChangedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_CountyBoundaryChanged implements _CountyBoundaryChanged {
-  const _$_CountyBoundaryChanged({required this.bounds, required this.ids});
+class _$CountyBoundaryChangedImpl implements _CountyBoundaryChanged {
+  const _$CountyBoundaryChangedImpl(
+      {required this.bounds, required final List<String> ids})
+      : _ids = ids;
 
   @override
   final Polygon bounds;
+  final List<String> _ids;
   @override
-  final List<String> ids;
+  List<String> get ids {
+    if (_ids is EqualUnmodifiableListView) return _ids;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_ids);
+  }
 
   @override
   String toString() {
@@ -607,73 +590,40 @@ class _$_CountyBoundaryChanged implements _CountyBoundaryChanged {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _CountyBoundaryChanged &&
-            (identical(other.bounds, bounds) ||
-                const DeepCollectionEquality().equals(other.bounds, bounds)) &&
-            (identical(other.ids, ids) ||
-                const DeepCollectionEquality().equals(other.ids, ids)));
+        (other.runtimeType == runtimeType &&
+            other is _$CountyBoundaryChangedImpl &&
+            (identical(other.bounds, bounds) || other.bounds == bounds) &&
+            const DeepCollectionEquality().equals(other._ids, _ids));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(bounds) ^
-      const DeepCollectionEquality().hash(ids);
+  int get hashCode => Object.hash(
+      runtimeType, bounds, const DeepCollectionEquality().hash(_ids));
 
   @JsonKey(ignore: true)
   @override
-  _$CountyBoundaryChangedCopyWith<_CountyBoundaryChanged> get copyWith =>
-      __$CountyBoundaryChangedCopyWithImpl<_CountyBoundaryChanged>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$CountyBoundaryChangedImplCopyWith<_$CountyBoundaryChangedImpl>
+      get copyWith => __$$CountyBoundaryChangedImplCopyWithImpl<
+          _$CountyBoundaryChangedImpl>(this, _$identity);
 }
 
 abstract class _CountyBoundaryChanged implements CountyBoundaryChanged {
   const factory _CountyBoundaryChanged(
-      {required Polygon bounds,
-      required List<String> ids}) = _$_CountyBoundaryChanged;
+      {required final Polygon bounds,
+      required final List<String> ids}) = _$CountyBoundaryChangedImpl;
 
   @override
-  Polygon get bounds => throw _privateConstructorUsedError;
+  Polygon get bounds;
   @override
-  List<String> get ids => throw _privateConstructorUsedError;
+  List<String> get ids;
   @override
   @JsonKey(ignore: true)
-  _$CountyBoundaryChangedCopyWith<_CountyBoundaryChanged> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$CountyBoundaryChangedImplCopyWith<_$CountyBoundaryChangedImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$CountiesStateTearOff {
-  const _$CountiesStateTearOff();
-
-  _Initial initial() {
-    return const _Initial();
-  }
-
-  _Loaded loaded(List<County> counties) {
-    return _Loaded(
-      counties,
-    );
-  }
-
-  _Loading loading(List<County>? counties, String msg) {
-    return _Loading(
-      counties,
-      msg,
-    );
-  }
-
-  _Error error(String msg) {
-    return _Error(
-      msg,
-    );
-  }
-}
-
-/// @nodoc
-const $CountiesState = _$CountiesStateTearOff();
 
 /// @nodoc
 mixin _$CountiesState {
@@ -687,10 +637,10 @@ mixin _$CountiesState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(List<County> counties)? loaded,
-    TResult Function(List<County>? counties, String msg)? loading,
-    TResult Function(String msg)? error,
+    TResult? Function()? initial,
+    TResult? Function(List<County> counties)? loaded,
+    TResult? Function(List<County>? counties, String msg)? loading,
+    TResult? Function(String msg)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -712,10 +662,10 @@ mixin _$CountiesState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_Loaded value)? loaded,
-    TResult Function(_Loading value)? loading,
-    TResult Function(_Error value)? error,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Error value)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -733,39 +683,40 @@ mixin _$CountiesState {
 abstract class $CountiesStateCopyWith<$Res> {
   factory $CountiesStateCopyWith(
           CountiesState value, $Res Function(CountiesState) then) =
-      _$CountiesStateCopyWithImpl<$Res>;
+      _$CountiesStateCopyWithImpl<$Res, CountiesState>;
 }
 
 /// @nodoc
-class _$CountiesStateCopyWithImpl<$Res>
+class _$CountiesStateCopyWithImpl<$Res, $Val extends CountiesState>
     implements $CountiesStateCopyWith<$Res> {
   _$CountiesStateCopyWithImpl(this._value, this._then);
 
-  final CountiesState _value;
   // ignore: unused_field
-  final $Res Function(CountiesState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$InitialCopyWith<$Res> {
-  factory _$InitialCopyWith(_Initial value, $Res Function(_Initial) then) =
-      __$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialImplCopyWith<$Res> {
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$InitialCopyWithImpl<$Res> extends _$CountiesStateCopyWithImpl<$Res>
-    implements _$InitialCopyWith<$Res> {
-  __$InitialCopyWithImpl(_Initial _value, $Res Function(_Initial) _then)
-      : super(_value, (v) => _then(v as _Initial));
-
-  @override
-  _Initial get _value => super._value as _Initial;
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$CountiesStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Initial implements _Initial {
-  const _$_Initial();
+class _$InitialImpl implements _Initial {
+  const _$InitialImpl();
 
   @override
   String toString() {
@@ -773,8 +724,9 @@ class _$_Initial implements _Initial {
   }
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _Initial);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$InitialImpl);
   }
 
   @override
@@ -794,10 +746,10 @@ class _$_Initial implements _Initial {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(List<County> counties)? loaded,
-    TResult Function(List<County>? counties, String msg)? loading,
-    TResult Function(String msg)? error,
+    TResult? Function()? initial,
+    TResult? Function(List<County> counties)? loaded,
+    TResult? Function(List<County>? counties, String msg)? loading,
+    TResult? Function(String msg)? error,
   }) {
     return initial?.call();
   }
@@ -831,10 +783,10 @@ class _$_Initial implements _Initial {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_Loaded value)? loaded,
-    TResult Function(_Loading value)? loading,
-    TResult Function(_Error value)? error,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Error value)? error,
   }) {
     return initial?.call(this);
   }
@@ -856,32 +808,34 @@ class _$_Initial implements _Initial {
 }
 
 abstract class _Initial implements CountiesState {
-  const factory _Initial() = _$_Initial;
+  const factory _Initial() = _$InitialImpl;
 }
 
 /// @nodoc
-abstract class _$LoadedCopyWith<$Res> {
-  factory _$LoadedCopyWith(_Loaded value, $Res Function(_Loaded) then) =
-      __$LoadedCopyWithImpl<$Res>;
+abstract class _$$LoadedImplCopyWith<$Res> {
+  factory _$$LoadedImplCopyWith(
+          _$LoadedImpl value, $Res Function(_$LoadedImpl) then) =
+      __$$LoadedImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({List<County> counties});
 }
 
 /// @nodoc
-class __$LoadedCopyWithImpl<$Res> extends _$CountiesStateCopyWithImpl<$Res>
-    implements _$LoadedCopyWith<$Res> {
-  __$LoadedCopyWithImpl(_Loaded _value, $Res Function(_Loaded) _then)
-      : super(_value, (v) => _then(v as _Loaded));
+class __$$LoadedImplCopyWithImpl<$Res>
+    extends _$CountiesStateCopyWithImpl<$Res, _$LoadedImpl>
+    implements _$$LoadedImplCopyWith<$Res> {
+  __$$LoadedImplCopyWithImpl(
+      _$LoadedImpl _value, $Res Function(_$LoadedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Loaded get _value => super._value as _Loaded;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? counties = freezed,
+    Object? counties = null,
   }) {
-    return _then(_Loaded(
-      counties == freezed
-          ? _value.counties
+    return _then(_$LoadedImpl(
+      null == counties
+          ? _value._counties
           : counties // ignore: cast_nullable_to_non_nullable
               as List<County>,
     ));
@@ -890,11 +844,16 @@ class __$LoadedCopyWithImpl<$Res> extends _$CountiesStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Loaded implements _Loaded {
-  const _$_Loaded(this.counties);
+class _$LoadedImpl implements _Loaded {
+  const _$LoadedImpl(final List<County> counties) : _counties = counties;
 
+  final List<County> _counties;
   @override
-  final List<County> counties;
+  List<County> get counties {
+    if (_counties is EqualUnmodifiableListView) return _counties;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_counties);
+  }
 
   @override
   String toString() {
@@ -902,22 +861,22 @@ class _$_Loaded implements _Loaded {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _Loaded &&
-            (identical(other.counties, counties) ||
-                const DeepCollectionEquality()
-                    .equals(other.counties, counties)));
+        (other.runtimeType == runtimeType &&
+            other is _$LoadedImpl &&
+            const DeepCollectionEquality().equals(other._counties, _counties));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(counties);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_counties));
 
   @JsonKey(ignore: true)
   @override
-  _$LoadedCopyWith<_Loaded> get copyWith =>
-      __$LoadedCopyWithImpl<_Loaded>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$LoadedImplCopyWith<_$LoadedImpl> get copyWith =>
+      __$$LoadedImplCopyWithImpl<_$LoadedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -933,10 +892,10 @@ class _$_Loaded implements _Loaded {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(List<County> counties)? loaded,
-    TResult Function(List<County>? counties, String msg)? loading,
-    TResult Function(String msg)? error,
+    TResult? Function()? initial,
+    TResult? Function(List<County> counties)? loaded,
+    TResult? Function(List<County>? counties, String msg)? loading,
+    TResult? Function(String msg)? error,
   }) {
     return loaded?.call(counties);
   }
@@ -970,10 +929,10 @@ class _$_Loaded implements _Loaded {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_Loaded value)? loaded,
-    TResult Function(_Loading value)? loading,
-    TResult Function(_Error value)? error,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Error value)? error,
   }) {
     return loaded?.call(this);
   }
@@ -995,40 +954,43 @@ class _$_Loaded implements _Loaded {
 }
 
 abstract class _Loaded implements CountiesState {
-  const factory _Loaded(List<County> counties) = _$_Loaded;
+  const factory _Loaded(final List<County> counties) = _$LoadedImpl;
 
-  List<County> get counties => throw _privateConstructorUsedError;
+  List<County> get counties;
   @JsonKey(ignore: true)
-  _$LoadedCopyWith<_Loaded> get copyWith => throw _privateConstructorUsedError;
+  _$$LoadedImplCopyWith<_$LoadedImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$LoadingCopyWith<$Res> {
-  factory _$LoadingCopyWith(_Loading value, $Res Function(_Loading) then) =
-      __$LoadingCopyWithImpl<$Res>;
+abstract class _$$LoadingImplCopyWith<$Res> {
+  factory _$$LoadingImplCopyWith(
+          _$LoadingImpl value, $Res Function(_$LoadingImpl) then) =
+      __$$LoadingImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({List<County>? counties, String msg});
 }
 
 /// @nodoc
-class __$LoadingCopyWithImpl<$Res> extends _$CountiesStateCopyWithImpl<$Res>
-    implements _$LoadingCopyWith<$Res> {
-  __$LoadingCopyWithImpl(_Loading _value, $Res Function(_Loading) _then)
-      : super(_value, (v) => _then(v as _Loading));
+class __$$LoadingImplCopyWithImpl<$Res>
+    extends _$CountiesStateCopyWithImpl<$Res, _$LoadingImpl>
+    implements _$$LoadingImplCopyWith<$Res> {
+  __$$LoadingImplCopyWithImpl(
+      _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Loading get _value => super._value as _Loading;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? counties = freezed,
-    Object? msg = freezed,
+    Object? msg = null,
   }) {
-    return _then(_Loading(
-      counties == freezed
-          ? _value.counties
+    return _then(_$LoadingImpl(
+      freezed == counties
+          ? _value._counties
           : counties // ignore: cast_nullable_to_non_nullable
               as List<County>?,
-      msg == freezed
+      null == msg
           ? _value.msg
           : msg // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1038,11 +1000,20 @@ class __$LoadingCopyWithImpl<$Res> extends _$CountiesStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Loading implements _Loading {
-  const _$_Loading(this.counties, this.msg);
+class _$LoadingImpl implements _Loading {
+  const _$LoadingImpl(final List<County>? counties, this.msg)
+      : _counties = counties;
 
+  final List<County>? _counties;
   @override
-  final List<County>? counties;
+  List<County>? get counties {
+    final value = _counties;
+    if (value == null) return null;
+    if (_counties is EqualUnmodifiableListView) return _counties;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   final String msg;
 
@@ -1052,26 +1023,23 @@ class _$_Loading implements _Loading {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _Loading &&
-            (identical(other.counties, counties) ||
-                const DeepCollectionEquality()
-                    .equals(other.counties, counties)) &&
-            (identical(other.msg, msg) ||
-                const DeepCollectionEquality().equals(other.msg, msg)));
+        (other.runtimeType == runtimeType &&
+            other is _$LoadingImpl &&
+            const DeepCollectionEquality().equals(other._counties, _counties) &&
+            (identical(other.msg, msg) || other.msg == msg));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(counties) ^
-      const DeepCollectionEquality().hash(msg);
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(_counties), msg);
 
   @JsonKey(ignore: true)
   @override
-  _$LoadingCopyWith<_Loading> get copyWith =>
-      __$LoadingCopyWithImpl<_Loading>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$LoadingImplCopyWith<_$LoadingImpl> get copyWith =>
+      __$$LoadingImplCopyWithImpl<_$LoadingImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1087,10 +1055,10 @@ class _$_Loading implements _Loading {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(List<County> counties)? loaded,
-    TResult Function(List<County>? counties, String msg)? loading,
-    TResult Function(String msg)? error,
+    TResult? Function()? initial,
+    TResult? Function(List<County> counties)? loaded,
+    TResult? Function(List<County>? counties, String msg)? loading,
+    TResult? Function(String msg)? error,
   }) {
     return loading?.call(counties, msg);
   }
@@ -1124,10 +1092,10 @@ class _$_Loading implements _Loading {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_Loaded value)? loaded,
-    TResult Function(_Loading value)? loading,
-    TResult Function(_Error value)? error,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Error value)? error,
   }) {
     return loading?.call(this);
   }
@@ -1149,37 +1117,40 @@ class _$_Loading implements _Loading {
 }
 
 abstract class _Loading implements CountiesState {
-  const factory _Loading(List<County>? counties, String msg) = _$_Loading;
+  const factory _Loading(final List<County>? counties, final String msg) =
+      _$LoadingImpl;
 
-  List<County>? get counties => throw _privateConstructorUsedError;
-  String get msg => throw _privateConstructorUsedError;
+  List<County>? get counties;
+  String get msg;
   @JsonKey(ignore: true)
-  _$LoadingCopyWith<_Loading> get copyWith =>
+  _$$LoadingImplCopyWith<_$LoadingImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ErrorCopyWith<$Res> {
-  factory _$ErrorCopyWith(_Error value, $Res Function(_Error) then) =
-      __$ErrorCopyWithImpl<$Res>;
+abstract class _$$ErrorImplCopyWith<$Res> {
+  factory _$$ErrorImplCopyWith(
+          _$ErrorImpl value, $Res Function(_$ErrorImpl) then) =
+      __$$ErrorImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({String msg});
 }
 
 /// @nodoc
-class __$ErrorCopyWithImpl<$Res> extends _$CountiesStateCopyWithImpl<$Res>
-    implements _$ErrorCopyWith<$Res> {
-  __$ErrorCopyWithImpl(_Error _value, $Res Function(_Error) _then)
-      : super(_value, (v) => _then(v as _Error));
+class __$$ErrorImplCopyWithImpl<$Res>
+    extends _$CountiesStateCopyWithImpl<$Res, _$ErrorImpl>
+    implements _$$ErrorImplCopyWith<$Res> {
+  __$$ErrorImplCopyWithImpl(
+      _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Error get _value => super._value as _Error;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? msg = freezed,
+    Object? msg = null,
   }) {
-    return _then(_Error(
-      msg == freezed
+    return _then(_$ErrorImpl(
+      null == msg
           ? _value.msg
           : msg // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1189,8 +1160,8 @@ class __$ErrorCopyWithImpl<$Res> extends _$CountiesStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Error implements _Error {
-  const _$_Error(this.msg);
+class _$ErrorImpl implements _Error {
+  const _$ErrorImpl(this.msg);
 
   @override
   final String msg;
@@ -1201,21 +1172,21 @@ class _$_Error implements _Error {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _Error &&
-            (identical(other.msg, msg) ||
-                const DeepCollectionEquality().equals(other.msg, msg)));
+        (other.runtimeType == runtimeType &&
+            other is _$ErrorImpl &&
+            (identical(other.msg, msg) || other.msg == msg));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(msg);
+  int get hashCode => Object.hash(runtimeType, msg);
 
   @JsonKey(ignore: true)
   @override
-  _$ErrorCopyWith<_Error> get copyWith =>
-      __$ErrorCopyWithImpl<_Error>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
+      __$$ErrorImplCopyWithImpl<_$ErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1231,10 +1202,10 @@ class _$_Error implements _Error {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(List<County> counties)? loaded,
-    TResult Function(List<County>? counties, String msg)? loading,
-    TResult Function(String msg)? error,
+    TResult? Function()? initial,
+    TResult? Function(List<County> counties)? loaded,
+    TResult? Function(List<County>? counties, String msg)? loading,
+    TResult? Function(String msg)? error,
   }) {
     return error?.call(msg);
   }
@@ -1268,10 +1239,10 @@ class _$_Error implements _Error {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_Loaded value)? loaded,
-    TResult Function(_Loading value)? loading,
-    TResult Function(_Error value)? error,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Error value)? error,
   }) {
     return error?.call(this);
   }
@@ -1293,29 +1264,13 @@ class _$_Error implements _Error {
 }
 
 abstract class _Error implements CountiesState {
-  const factory _Error(String msg) = _$_Error;
+  const factory _Error(final String msg) = _$ErrorImpl;
 
-  String get msg => throw _privateConstructorUsedError;
+  String get msg;
   @JsonKey(ignore: true)
-  _$ErrorCopyWith<_Error> get copyWith => throw _privateConstructorUsedError;
+  _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$CountyTearOff {
-  const _$CountyTearOff();
-
-  _County call(
-      {required String id, required String name, required CountyGeom geom}) {
-    return _County(
-      id: id,
-      name: name,
-      geom: geom,
-    );
-  }
-}
-
-/// @nodoc
-const $County = _$CountyTearOff();
 
 /// @nodoc
 mixin _$County {
@@ -1330,55 +1285,62 @@ mixin _$County {
 /// @nodoc
 abstract class $CountyCopyWith<$Res> {
   factory $CountyCopyWith(County value, $Res Function(County) then) =
-      _$CountyCopyWithImpl<$Res>;
+      _$CountyCopyWithImpl<$Res, County>;
+  @useResult
   $Res call({String id, String name, CountyGeom geom});
 
   $CountyGeomCopyWith<$Res> get geom;
 }
 
 /// @nodoc
-class _$CountyCopyWithImpl<$Res> implements $CountyCopyWith<$Res> {
+class _$CountyCopyWithImpl<$Res, $Val extends County>
+    implements $CountyCopyWith<$Res> {
   _$CountyCopyWithImpl(this._value, this._then);
 
-  final County _value;
   // ignore: unused_field
-  final $Res Function(County) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? geom = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? geom = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      geom: geom == freezed
+      geom: null == geom
           ? _value.geom
           : geom // ignore: cast_nullable_to_non_nullable
               as CountyGeom,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $CountyGeomCopyWith<$Res> get geom {
     return $CountyGeomCopyWith<$Res>(_value.geom, (value) {
-      return _then(_value.copyWith(geom: value));
+      return _then(_value.copyWith(geom: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$CountyCopyWith<$Res> implements $CountyCopyWith<$Res> {
-  factory _$CountyCopyWith(_County value, $Res Function(_County) then) =
-      __$CountyCopyWithImpl<$Res>;
+abstract class _$$CountyImplCopyWith<$Res> implements $CountyCopyWith<$Res> {
+  factory _$$CountyImplCopyWith(
+          _$CountyImpl value, $Res Function(_$CountyImpl) then) =
+      __$$CountyImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String id, String name, CountyGeom geom});
 
   @override
@@ -1386,30 +1348,30 @@ abstract class _$CountyCopyWith<$Res> implements $CountyCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$CountyCopyWithImpl<$Res> extends _$CountyCopyWithImpl<$Res>
-    implements _$CountyCopyWith<$Res> {
-  __$CountyCopyWithImpl(_County _value, $Res Function(_County) _then)
-      : super(_value, (v) => _then(v as _County));
+class __$$CountyImplCopyWithImpl<$Res>
+    extends _$CountyCopyWithImpl<$Res, _$CountyImpl>
+    implements _$$CountyImplCopyWith<$Res> {
+  __$$CountyImplCopyWithImpl(
+      _$CountyImpl _value, $Res Function(_$CountyImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _County get _value => super._value as _County;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? geom = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? geom = null,
   }) {
-    return _then(_County(
-      id: id == freezed
+    return _then(_$CountyImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      geom: geom == freezed
+      geom: null == geom
           ? _value.geom
           : geom // ignore: cast_nullable_to_non_nullable
               as CountyGeom,
@@ -1419,8 +1381,9 @@ class __$CountyCopyWithImpl<$Res> extends _$CountyCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_County implements _County {
-  const _$_County({required this.id, required this.name, required this.geom});
+class _$CountyImpl implements _County {
+  const _$CountyImpl(
+      {required this.id, required this.name, required this.geom});
 
   @override
   final String id;
@@ -1435,69 +1398,46 @@ class _$_County implements _County {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _County &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.geom, geom) ||
-                const DeepCollectionEquality().equals(other.geom, geom)));
+        (other.runtimeType == runtimeType &&
+            other is _$CountyImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.geom, geom) || other.geom == geom));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(geom);
+  int get hashCode => Object.hash(runtimeType, id, name, geom);
 
   @JsonKey(ignore: true)
   @override
-  _$CountyCopyWith<_County> get copyWith =>
-      __$CountyCopyWithImpl<_County>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$CountyImplCopyWith<_$CountyImpl> get copyWith =>
+      __$$CountyImplCopyWithImpl<_$CountyImpl>(this, _$identity);
 }
 
 abstract class _County implements County {
   const factory _County(
-      {required String id,
-      required String name,
-      required CountyGeom geom}) = _$_County;
+      {required final String id,
+      required final String name,
+      required final CountyGeom geom}) = _$CountyImpl;
 
   @override
-  String get id => throw _privateConstructorUsedError;
+  String get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  CountyGeom get geom => throw _privateConstructorUsedError;
+  CountyGeom get geom;
   @override
   @JsonKey(ignore: true)
-  _$CountyCopyWith<_County> get copyWith => throw _privateConstructorUsedError;
+  _$$CountyImplCopyWith<_$CountyImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$CountyGeomTearOff {
-  const _$CountyGeomTearOff();
-
-  _Polygon polygon(Polygon polygon) {
-    return _Polygon(
-      polygon,
-    );
-  }
-
-  _MultiPolygon multi(MultiPolygon polygon) {
-    return _MultiPolygon(
-      polygon,
-    );
-  }
-}
-
-/// @nodoc
-const $CountyGeom = _$CountyGeomTearOff();
 
 /// @nodoc
 mixin _$CountyGeom {
+  Geometry get polygon => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(Polygon polygon) polygon,
@@ -1506,8 +1446,8 @@ mixin _$CountyGeom {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(Polygon polygon)? polygon,
-    TResult Function(MultiPolygon polygon)? multi,
+    TResult? Function(Polygon polygon)? polygon,
+    TResult? Function(MultiPolygon polygon)? multi,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -1525,8 +1465,8 @@ mixin _$CountyGeom {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Polygon value)? polygon,
-    TResult Function(_MultiPolygon value)? multi,
+    TResult? Function(_Polygon value)? polygon,
+    TResult? Function(_MultiPolygon value)? multi,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -1542,40 +1482,44 @@ mixin _$CountyGeom {
 abstract class $CountyGeomCopyWith<$Res> {
   factory $CountyGeomCopyWith(
           CountyGeom value, $Res Function(CountyGeom) then) =
-      _$CountyGeomCopyWithImpl<$Res>;
+      _$CountyGeomCopyWithImpl<$Res, CountyGeom>;
 }
 
 /// @nodoc
-class _$CountyGeomCopyWithImpl<$Res> implements $CountyGeomCopyWith<$Res> {
+class _$CountyGeomCopyWithImpl<$Res, $Val extends CountyGeom>
+    implements $CountyGeomCopyWith<$Res> {
   _$CountyGeomCopyWithImpl(this._value, this._then);
 
-  final CountyGeom _value;
   // ignore: unused_field
-  final $Res Function(CountyGeom) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$PolygonCopyWith<$Res> {
-  factory _$PolygonCopyWith(_Polygon value, $Res Function(_Polygon) then) =
-      __$PolygonCopyWithImpl<$Res>;
+abstract class _$$PolygonImplCopyWith<$Res> {
+  factory _$$PolygonImplCopyWith(
+          _$PolygonImpl value, $Res Function(_$PolygonImpl) then) =
+      __$$PolygonImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({Polygon polygon});
 }
 
 /// @nodoc
-class __$PolygonCopyWithImpl<$Res> extends _$CountyGeomCopyWithImpl<$Res>
-    implements _$PolygonCopyWith<$Res> {
-  __$PolygonCopyWithImpl(_Polygon _value, $Res Function(_Polygon) _then)
-      : super(_value, (v) => _then(v as _Polygon));
+class __$$PolygonImplCopyWithImpl<$Res>
+    extends _$CountyGeomCopyWithImpl<$Res, _$PolygonImpl>
+    implements _$$PolygonImplCopyWith<$Res> {
+  __$$PolygonImplCopyWithImpl(
+      _$PolygonImpl _value, $Res Function(_$PolygonImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _Polygon get _value => super._value as _Polygon;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? polygon = freezed,
+    Object? polygon = null,
   }) {
-    return _then(_Polygon(
-      polygon == freezed
+    return _then(_$PolygonImpl(
+      null == polygon
           ? _value.polygon
           : polygon // ignore: cast_nullable_to_non_nullable
               as Polygon,
@@ -1585,8 +1529,8 @@ class __$PolygonCopyWithImpl<$Res> extends _$CountyGeomCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Polygon implements _Polygon {
-  const _$_Polygon(this.polygon);
+class _$PolygonImpl implements _Polygon {
+  const _$PolygonImpl(this.polygon);
 
   @override
   final Polygon polygon;
@@ -1597,21 +1541,21 @@ class _$_Polygon implements _Polygon {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _Polygon &&
-            (identical(other.polygon, polygon) ||
-                const DeepCollectionEquality().equals(other.polygon, polygon)));
+        (other.runtimeType == runtimeType &&
+            other is _$PolygonImpl &&
+            (identical(other.polygon, polygon) || other.polygon == polygon));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(polygon);
+  int get hashCode => Object.hash(runtimeType, polygon);
 
   @JsonKey(ignore: true)
   @override
-  _$PolygonCopyWith<_Polygon> get copyWith =>
-      __$PolygonCopyWithImpl<_Polygon>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PolygonImplCopyWith<_$PolygonImpl> get copyWith =>
+      __$$PolygonImplCopyWithImpl<_$PolygonImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1625,8 +1569,8 @@ class _$_Polygon implements _Polygon {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(Polygon polygon)? polygon,
-    TResult Function(MultiPolygon polygon)? multi,
+    TResult? Function(Polygon polygon)? polygon,
+    TResult? Function(MultiPolygon polygon)? multi,
   }) {
     return polygon?.call(this.polygon);
   }
@@ -1656,8 +1600,8 @@ class _$_Polygon implements _Polygon {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Polygon value)? polygon,
-    TResult Function(_MultiPolygon value)? multi,
+    TResult? Function(_Polygon value)? polygon,
+    TResult? Function(_MultiPolygon value)? multi,
   }) {
     return polygon?.call(this);
   }
@@ -1677,38 +1621,39 @@ class _$_Polygon implements _Polygon {
 }
 
 abstract class _Polygon implements CountyGeom {
-  const factory _Polygon(Polygon polygon) = _$_Polygon;
+  const factory _Polygon(final Polygon polygon) = _$PolygonImpl;
 
-  Polygon get polygon => throw _privateConstructorUsedError;
+  @override
+  Polygon get polygon;
   @JsonKey(ignore: true)
-  _$PolygonCopyWith<_Polygon> get copyWith =>
+  _$$PolygonImplCopyWith<_$PolygonImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$MultiPolygonCopyWith<$Res> {
-  factory _$MultiPolygonCopyWith(
-          _MultiPolygon value, $Res Function(_MultiPolygon) then) =
-      __$MultiPolygonCopyWithImpl<$Res>;
+abstract class _$$MultiPolygonImplCopyWith<$Res> {
+  factory _$$MultiPolygonImplCopyWith(
+          _$MultiPolygonImpl value, $Res Function(_$MultiPolygonImpl) then) =
+      __$$MultiPolygonImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({MultiPolygon polygon});
 }
 
 /// @nodoc
-class __$MultiPolygonCopyWithImpl<$Res> extends _$CountyGeomCopyWithImpl<$Res>
-    implements _$MultiPolygonCopyWith<$Res> {
-  __$MultiPolygonCopyWithImpl(
-      _MultiPolygon _value, $Res Function(_MultiPolygon) _then)
-      : super(_value, (v) => _then(v as _MultiPolygon));
+class __$$MultiPolygonImplCopyWithImpl<$Res>
+    extends _$CountyGeomCopyWithImpl<$Res, _$MultiPolygonImpl>
+    implements _$$MultiPolygonImplCopyWith<$Res> {
+  __$$MultiPolygonImplCopyWithImpl(
+      _$MultiPolygonImpl _value, $Res Function(_$MultiPolygonImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MultiPolygon get _value => super._value as _MultiPolygon;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? polygon = freezed,
+    Object? polygon = null,
   }) {
-    return _then(_MultiPolygon(
-      polygon == freezed
+    return _then(_$MultiPolygonImpl(
+      null == polygon
           ? _value.polygon
           : polygon // ignore: cast_nullable_to_non_nullable
               as MultiPolygon,
@@ -1718,8 +1663,8 @@ class __$MultiPolygonCopyWithImpl<$Res> extends _$CountyGeomCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_MultiPolygon implements _MultiPolygon {
-  const _$_MultiPolygon(this.polygon);
+class _$MultiPolygonImpl implements _MultiPolygon {
+  const _$MultiPolygonImpl(this.polygon);
 
   @override
   final MultiPolygon polygon;
@@ -1730,21 +1675,21 @@ class _$_MultiPolygon implements _MultiPolygon {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _MultiPolygon &&
-            (identical(other.polygon, polygon) ||
-                const DeepCollectionEquality().equals(other.polygon, polygon)));
+        (other.runtimeType == runtimeType &&
+            other is _$MultiPolygonImpl &&
+            (identical(other.polygon, polygon) || other.polygon == polygon));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(polygon);
+  int get hashCode => Object.hash(runtimeType, polygon);
 
   @JsonKey(ignore: true)
   @override
-  _$MultiPolygonCopyWith<_MultiPolygon> get copyWith =>
-      __$MultiPolygonCopyWithImpl<_MultiPolygon>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MultiPolygonImplCopyWith<_$MultiPolygonImpl> get copyWith =>
+      __$$MultiPolygonImplCopyWithImpl<_$MultiPolygonImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1758,8 +1703,8 @@ class _$_MultiPolygon implements _MultiPolygon {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(Polygon polygon)? polygon,
-    TResult Function(MultiPolygon polygon)? multi,
+    TResult? Function(Polygon polygon)? polygon,
+    TResult? Function(MultiPolygon polygon)? multi,
   }) {
     return multi?.call(this.polygon);
   }
@@ -1789,8 +1734,8 @@ class _$_MultiPolygon implements _MultiPolygon {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Polygon value)? polygon,
-    TResult Function(_MultiPolygon value)? multi,
+    TResult? Function(_Polygon value)? polygon,
+    TResult? Function(_MultiPolygon value)? multi,
   }) {
     return multi?.call(this);
   }
@@ -1810,10 +1755,11 @@ class _$_MultiPolygon implements _MultiPolygon {
 }
 
 abstract class _MultiPolygon implements CountyGeom {
-  const factory _MultiPolygon(MultiPolygon polygon) = _$_MultiPolygon;
+  const factory _MultiPolygon(final MultiPolygon polygon) = _$MultiPolygonImpl;
 
-  MultiPolygon get polygon => throw _privateConstructorUsedError;
+  @override
+  MultiPolygon get polygon;
   @JsonKey(ignore: true)
-  _$MultiPolygonCopyWith<_MultiPolygon> get copyWith =>
+  _$$MultiPolygonImplCopyWith<_$MultiPolygonImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

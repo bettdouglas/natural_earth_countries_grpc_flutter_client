@@ -1,3 +1,4 @@
+import 'package:build_context/build_context.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:ne_countries_grpc/countries/bloc/countries_bloc.dart';
@@ -7,14 +8,16 @@ import 'package:ne_countries_grpc/countries/view/jts_2_fm_plotting_extensions.da
 
 class CustomDialogBox extends StatelessWidget {
   const CustomDialogBox({
-    Key? key,
     required this.title,
     required this.descriptions,
     required this.text,
     required this.country,
+    Key? key,
   }) : super(key: key);
 
-  final String title, descriptions, text;
+  final String title;
+  final String descriptions;
+  final String text;
   final Country country;
 
   @override
@@ -36,12 +39,10 @@ class CustomDialogBox extends StatelessWidget {
             ),
             margin: const EdgeInsets.only(top: 45),
             decoration: BoxDecoration(
-              shape: BoxShape.rectangle,
               color: Colors.white,
               borderRadius: BorderRadius.circular(20),
               boxShadow: const [
                 BoxShadow(
-                  color: Colors.black,
                   offset: Offset(0, 10),
                   blurRadius: 10,
                 ),
@@ -74,13 +75,14 @@ class CustomDialogBox extends StatelessWidget {
                 Align(
                   alignment: Alignment.bottomRight,
                   child: TextButton(
-                      onPressed: () {
-                        Navigator.of(context).pop();
-                      },
-                      child: Text(
-                        text,
-                        style: const TextStyle(fontSize: 18),
-                      )),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                    child: Text(
+                      text,
+                      style: const TextStyle(fontSize: 18),
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -97,15 +99,16 @@ class CustomDialogBox extends StatelessWidget {
                   width: 90,
                   child: BaseMap(
                     center: country.boundary.center.toLatLng(),
-                    zoom: 1.0,
-                    polygonLayerOptionsList: [
-                      PolygonLayerOptions(
+                    zoom: 1,
+                    polygonLayers: [
+                      PolygonLayer(
                         polygons: country.plot(
                           borderColor: Colors.white,
                           color: Colors.black,
-                          borderStrokeWidth: 1.0,
+                          borderStrokeWidth: 1,
+                          labelStyle: context.bodyText1!,
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),

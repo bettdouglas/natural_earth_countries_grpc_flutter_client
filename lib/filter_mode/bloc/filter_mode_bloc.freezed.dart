@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'filter_mode_bloc.dart';
 
@@ -11,27 +12,7 @@ part of 'filter_mode_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$FilterModeStateTearOff {
-  const _$FilterModeStateTearOff();
-
-  _All all() {
-    return const _All();
-  }
-
-  _Name name() {
-    return const _Name();
-  }
-
-  _Boundary boundary() {
-    return const _Boundary();
-  }
-}
-
-/// @nodoc
-const $FilterModeState = _$FilterModeStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$FilterModeState {
@@ -44,9 +25,9 @@ mixin _$FilterModeState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? all,
-    TResult Function()? name,
-    TResult Function()? boundary,
+    TResult? Function()? all,
+    TResult? Function()? name,
+    TResult? Function()? boundary,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -66,9 +47,9 @@ mixin _$FilterModeState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_All value)? all,
-    TResult Function(_Name value)? name,
-    TResult Function(_Boundary value)? boundary,
+    TResult? Function(_All value)? all,
+    TResult? Function(_Name value)? name,
+    TResult? Function(_Boundary value)? boundary,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -85,39 +66,38 @@ mixin _$FilterModeState {
 abstract class $FilterModeStateCopyWith<$Res> {
   factory $FilterModeStateCopyWith(
           FilterModeState value, $Res Function(FilterModeState) then) =
-      _$FilterModeStateCopyWithImpl<$Res>;
+      _$FilterModeStateCopyWithImpl<$Res, FilterModeState>;
 }
 
 /// @nodoc
-class _$FilterModeStateCopyWithImpl<$Res>
+class _$FilterModeStateCopyWithImpl<$Res, $Val extends FilterModeState>
     implements $FilterModeStateCopyWith<$Res> {
   _$FilterModeStateCopyWithImpl(this._value, this._then);
 
-  final FilterModeState _value;
   // ignore: unused_field
-  final $Res Function(FilterModeState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$AllCopyWith<$Res> {
-  factory _$AllCopyWith(_All value, $Res Function(_All) then) =
-      __$AllCopyWithImpl<$Res>;
+abstract class _$$AllImplCopyWith<$Res> {
+  factory _$$AllImplCopyWith(_$AllImpl value, $Res Function(_$AllImpl) then) =
+      __$$AllImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$AllCopyWithImpl<$Res> extends _$FilterModeStateCopyWithImpl<$Res>
-    implements _$AllCopyWith<$Res> {
-  __$AllCopyWithImpl(_All _value, $Res Function(_All) _then)
-      : super(_value, (v) => _then(v as _All));
-
-  @override
-  _All get _value => super._value as _All;
+class __$$AllImplCopyWithImpl<$Res>
+    extends _$FilterModeStateCopyWithImpl<$Res, _$AllImpl>
+    implements _$$AllImplCopyWith<$Res> {
+  __$$AllImplCopyWithImpl(_$AllImpl _value, $Res Function(_$AllImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_All implements _All {
-  const _$_All();
+class _$AllImpl implements _All {
+  const _$AllImpl();
 
   @override
   String toString() {
@@ -125,8 +105,9 @@ class _$_All implements _All {
   }
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _All);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$AllImpl);
   }
 
   @override
@@ -145,9 +126,9 @@ class _$_All implements _All {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? all,
-    TResult Function()? name,
-    TResult Function()? boundary,
+    TResult? Function()? all,
+    TResult? Function()? name,
+    TResult? Function()? boundary,
   }) {
     return all?.call();
   }
@@ -179,9 +160,9 @@ class _$_All implements _All {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_All value)? all,
-    TResult Function(_Name value)? name,
-    TResult Function(_Boundary value)? boundary,
+    TResult? Function(_All value)? all,
+    TResult? Function(_Name value)? name,
+    TResult? Function(_Boundary value)? boundary,
   }) {
     return all?.call(this);
   }
@@ -202,29 +183,28 @@ class _$_All implements _All {
 }
 
 abstract class _All implements FilterModeState {
-  const factory _All() = _$_All;
+  const factory _All() = _$AllImpl;
 }
 
 /// @nodoc
-abstract class _$NameCopyWith<$Res> {
-  factory _$NameCopyWith(_Name value, $Res Function(_Name) then) =
-      __$NameCopyWithImpl<$Res>;
+abstract class _$$NameImplCopyWith<$Res> {
+  factory _$$NameImplCopyWith(
+          _$NameImpl value, $Res Function(_$NameImpl) then) =
+      __$$NameImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$NameCopyWithImpl<$Res> extends _$FilterModeStateCopyWithImpl<$Res>
-    implements _$NameCopyWith<$Res> {
-  __$NameCopyWithImpl(_Name _value, $Res Function(_Name) _then)
-      : super(_value, (v) => _then(v as _Name));
-
-  @override
-  _Name get _value => super._value as _Name;
+class __$$NameImplCopyWithImpl<$Res>
+    extends _$FilterModeStateCopyWithImpl<$Res, _$NameImpl>
+    implements _$$NameImplCopyWith<$Res> {
+  __$$NameImplCopyWithImpl(_$NameImpl _value, $Res Function(_$NameImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Name implements _Name {
-  const _$_Name();
+class _$NameImpl implements _Name {
+  const _$NameImpl();
 
   @override
   String toString() {
@@ -232,8 +212,9 @@ class _$_Name implements _Name {
   }
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _Name);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$NameImpl);
   }
 
   @override
@@ -252,9 +233,9 @@ class _$_Name implements _Name {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? all,
-    TResult Function()? name,
-    TResult Function()? boundary,
+    TResult? Function()? all,
+    TResult? Function()? name,
+    TResult? Function()? boundary,
   }) {
     return name?.call();
   }
@@ -286,9 +267,9 @@ class _$_Name implements _Name {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_All value)? all,
-    TResult Function(_Name value)? name,
-    TResult Function(_Boundary value)? boundary,
+    TResult? Function(_All value)? all,
+    TResult? Function(_Name value)? name,
+    TResult? Function(_Boundary value)? boundary,
   }) {
     return name?.call(this);
   }
@@ -309,29 +290,29 @@ class _$_Name implements _Name {
 }
 
 abstract class _Name implements FilterModeState {
-  const factory _Name() = _$_Name;
+  const factory _Name() = _$NameImpl;
 }
 
 /// @nodoc
-abstract class _$BoundaryCopyWith<$Res> {
-  factory _$BoundaryCopyWith(_Boundary value, $Res Function(_Boundary) then) =
-      __$BoundaryCopyWithImpl<$Res>;
+abstract class _$$BoundaryImplCopyWith<$Res> {
+  factory _$$BoundaryImplCopyWith(
+          _$BoundaryImpl value, $Res Function(_$BoundaryImpl) then) =
+      __$$BoundaryImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$BoundaryCopyWithImpl<$Res> extends _$FilterModeStateCopyWithImpl<$Res>
-    implements _$BoundaryCopyWith<$Res> {
-  __$BoundaryCopyWithImpl(_Boundary _value, $Res Function(_Boundary) _then)
-      : super(_value, (v) => _then(v as _Boundary));
-
-  @override
-  _Boundary get _value => super._value as _Boundary;
+class __$$BoundaryImplCopyWithImpl<$Res>
+    extends _$FilterModeStateCopyWithImpl<$Res, _$BoundaryImpl>
+    implements _$$BoundaryImplCopyWith<$Res> {
+  __$$BoundaryImplCopyWithImpl(
+      _$BoundaryImpl _value, $Res Function(_$BoundaryImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Boundary implements _Boundary {
-  const _$_Boundary();
+class _$BoundaryImpl implements _Boundary {
+  const _$BoundaryImpl();
 
   @override
   String toString() {
@@ -339,8 +320,9 @@ class _$_Boundary implements _Boundary {
   }
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _Boundary);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$BoundaryImpl);
   }
 
   @override
@@ -359,9 +341,9 @@ class _$_Boundary implements _Boundary {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? all,
-    TResult Function()? name,
-    TResult Function()? boundary,
+    TResult? Function()? all,
+    TResult? Function()? name,
+    TResult? Function()? boundary,
   }) {
     return boundary?.call();
   }
@@ -393,9 +375,9 @@ class _$_Boundary implements _Boundary {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_All value)? all,
-    TResult Function(_Name value)? name,
-    TResult Function(_Boundary value)? boundary,
+    TResult? Function(_All value)? all,
+    TResult? Function(_Name value)? name,
+    TResult? Function(_Boundary value)? boundary,
   }) {
     return boundary?.call(this);
   }
@@ -416,5 +398,5 @@ class _$_Boundary implements _Boundary {
 }
 
 abstract class _Boundary implements FilterModeState {
-  const factory _Boundary() = _$_Boundary;
+  const factory _Boundary() = _$BoundaryImpl;
 }

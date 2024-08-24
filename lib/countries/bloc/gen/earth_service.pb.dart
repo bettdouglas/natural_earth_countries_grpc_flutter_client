@@ -1,9 +1,13 @@
-///
+//
 //  Generated code. Do not modify.
 //  source: earth_service.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
+
+// ignore_for_file: annotate_overrides, camel_case_types, comment_references
+// ignore_for_file: constant_identifier_names, library_prefixes
+// ignore_for_file: non_constant_identifier_names, prefer_final_fields
+// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
 
 import 'dart:core' as $core;
 
@@ -12,38 +16,39 @@ import 'package:protobuf/protobuf.dart' as $pb;
 import 'geometry.pb.dart' as $1;
 
 class Country extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Country', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'countries'), createEmptyInstance: create)
-    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'code')
-    ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'name')
-    ..aOM<$1.Geometry>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'geometry', subBuilder: $1.Geometry.create)
-    ..aOS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'type')
-    ..hasRequiredFields = false
-  ;
-
-  Country._() : super();
   factory Country({
     $core.String? code,
     $core.String? name,
     $1.Geometry? geometry,
     $core.String? type,
   }) {
-    final _result = create();
+    final $result = create();
     if (code != null) {
-      _result.code = code;
+      $result.code = code;
     }
     if (name != null) {
-      _result.name = name;
+      $result.name = name;
     }
     if (geometry != null) {
-      _result.geometry = geometry;
+      $result.geometry = geometry;
     }
     if (type != null) {
-      _result.type = type;
+      $result.type = type;
     }
-    return _result;
+    return $result;
   }
+  Country._() : super();
   factory Country.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Country.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Country', package: const $pb.PackageName(_omitMessageNames ? '' : 'countries'), createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'code')
+    ..aOS(2, _omitFieldNames ? '' : 'name')
+    ..aOM<$1.Geometry>(3, _omitFieldNames ? '' : 'geometry', subBuilder: $1.Geometry.create)
+    ..aOS(4, _omitFieldNames ? '' : 'type')
+    ..hasRequiredFields = false
+  ;
+
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
@@ -53,8 +58,10 @@ class Country extends $pb.GeneratedMessage {
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  Country copyWith(void Function(Country) updates) => super.copyWith((message) => updates(message as Country)) as Country; // ignore: deprecated_member_use
+  Country copyWith(void Function(Country) updates) => super.copyWith((message) => updates(message as Country)) as Country;
+
   $pb.BuilderInfo get info_ => _i;
+
   @$core.pragma('dart2js:noInline')
   static Country create() => Country._();
   Country createEmptyInstance() => create();
@@ -103,23 +110,24 @@ class Country extends $pb.GeneratedMessage {
 }
 
 class Countries extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Countries', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'countries'), createEmptyInstance: create)
-    ..pc<Country>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'countries', $pb.PbFieldType.PM, subBuilder: Country.create)
-    ..hasRequiredFields = false
-  ;
-
-  Countries._() : super();
   factory Countries({
     $core.Iterable<Country>? countries,
   }) {
-    final _result = create();
+    final $result = create();
     if (countries != null) {
-      _result.countries.addAll(countries);
+      $result.countries.addAll(countries);
     }
-    return _result;
+    return $result;
   }
+  Countries._() : super();
   factory Countries.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Countries.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Countries', package: const $pb.PackageName(_omitMessageNames ? '' : 'countries'), createEmptyInstance: create)
+    ..pc<Country>(1, _omitFieldNames ? '' : 'countries', $pb.PbFieldType.PM, subBuilder: Country.create)
+    ..hasRequiredFields = false
+  ;
+
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
@@ -129,8 +137,10 @@ class Countries extends $pb.GeneratedMessage {
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  Countries copyWith(void Function(Countries) updates) => super.copyWith((message) => updates(message as Countries)) as Countries; // ignore: deprecated_member_use
+  Countries copyWith(void Function(Countries) updates) => super.copyWith((message) => updates(message as Countries)) as Countries;
+
   $pb.BuilderInfo get info_ => _i;
+
   @$core.pragma('dart2js:noInline')
   static Countries create() => Countries._();
   Countries createEmptyInstance() => create();
@@ -144,23 +154,24 @@ class Countries extends $pb.GeneratedMessage {
 }
 
 class GetAllCountriesRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'GetAllCountriesRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'countries'), createEmptyInstance: create)
-    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'message')
-    ..hasRequiredFields = false
-  ;
-
-  GetAllCountriesRequest._() : super();
   factory GetAllCountriesRequest({
     $core.String? message,
   }) {
-    final _result = create();
+    final $result = create();
     if (message != null) {
-      _result.message = message;
+      $result.message = message;
     }
-    return _result;
+    return $result;
   }
+  GetAllCountriesRequest._() : super();
   factory GetAllCountriesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GetAllCountriesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetAllCountriesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'countries'), createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'message')
+    ..hasRequiredFields = false
+  ;
+
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
@@ -170,8 +181,10 @@ class GetAllCountriesRequest extends $pb.GeneratedMessage {
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  GetAllCountriesRequest copyWith(void Function(GetAllCountriesRequest) updates) => super.copyWith((message) => updates(message as GetAllCountriesRequest)) as GetAllCountriesRequest; // ignore: deprecated_member_use
+  GetAllCountriesRequest copyWith(void Function(GetAllCountriesRequest) updates) => super.copyWith((message) => updates(message as GetAllCountriesRequest)) as GetAllCountriesRequest;
+
   $pb.BuilderInfo get info_ => _i;
+
   @$core.pragma('dart2js:noInline')
   static GetAllCountriesRequest create() => GetAllCountriesRequest._();
   GetAllCountriesRequest createEmptyInstance() => create();
@@ -191,23 +204,24 @@ class GetAllCountriesRequest extends $pb.GeneratedMessage {
 }
 
 class GetCountriesInBoundaryRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'GetCountriesInBoundaryRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'countries'), createEmptyInstance: create)
-    ..aOM<$1.Geometry>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'boundary', subBuilder: $1.Geometry.create)
-    ..hasRequiredFields = false
-  ;
-
-  GetCountriesInBoundaryRequest._() : super();
   factory GetCountriesInBoundaryRequest({
     $1.Geometry? boundary,
   }) {
-    final _result = create();
+    final $result = create();
     if (boundary != null) {
-      _result.boundary = boundary;
+      $result.boundary = boundary;
     }
-    return _result;
+    return $result;
   }
+  GetCountriesInBoundaryRequest._() : super();
   factory GetCountriesInBoundaryRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GetCountriesInBoundaryRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetCountriesInBoundaryRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'countries'), createEmptyInstance: create)
+    ..aOM<$1.Geometry>(1, _omitFieldNames ? '' : 'boundary', subBuilder: $1.Geometry.create)
+    ..hasRequiredFields = false
+  ;
+
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
@@ -217,8 +231,10 @@ class GetCountriesInBoundaryRequest extends $pb.GeneratedMessage {
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  GetCountriesInBoundaryRequest copyWith(void Function(GetCountriesInBoundaryRequest) updates) => super.copyWith((message) => updates(message as GetCountriesInBoundaryRequest)) as GetCountriesInBoundaryRequest; // ignore: deprecated_member_use
+  GetCountriesInBoundaryRequest copyWith(void Function(GetCountriesInBoundaryRequest) updates) => super.copyWith((message) => updates(message as GetCountriesInBoundaryRequest)) as GetCountriesInBoundaryRequest;
+
   $pb.BuilderInfo get info_ => _i;
+
   @$core.pragma('dart2js:noInline')
   static GetCountriesInBoundaryRequest create() => GetCountriesInBoundaryRequest._();
   GetCountriesInBoundaryRequest createEmptyInstance() => create();
@@ -240,23 +256,24 @@ class GetCountriesInBoundaryRequest extends $pb.GeneratedMessage {
 }
 
 class SearchCountriesRequest extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'SearchCountriesRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'countries'), createEmptyInstance: create)
-    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'keyword')
-    ..hasRequiredFields = false
-  ;
-
-  SearchCountriesRequest._() : super();
   factory SearchCountriesRequest({
     $core.String? keyword,
   }) {
-    final _result = create();
+    final $result = create();
     if (keyword != null) {
-      _result.keyword = keyword;
+      $result.keyword = keyword;
     }
-    return _result;
+    return $result;
   }
+  SearchCountriesRequest._() : super();
   factory SearchCountriesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SearchCountriesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchCountriesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'countries'), createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'keyword')
+    ..hasRequiredFields = false
+  ;
+
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
@@ -266,8 +283,10 @@ class SearchCountriesRequest extends $pb.GeneratedMessage {
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  SearchCountriesRequest copyWith(void Function(SearchCountriesRequest) updates) => super.copyWith((message) => updates(message as SearchCountriesRequest)) as SearchCountriesRequest; // ignore: deprecated_member_use
+  SearchCountriesRequest copyWith(void Function(SearchCountriesRequest) updates) => super.copyWith((message) => updates(message as SearchCountriesRequest)) as SearchCountriesRequest;
+
   $pb.BuilderInfo get info_ => _i;
+
   @$core.pragma('dart2js:noInline')
   static SearchCountriesRequest create() => SearchCountriesRequest._();
   SearchCountriesRequest createEmptyInstance() => create();
@@ -286,3 +305,6 @@ class SearchCountriesRequest extends $pb.GeneratedMessage {
   void clearKeyword() => clearField(1);
 }
 
+
+const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
+const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
